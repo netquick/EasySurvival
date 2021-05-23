@@ -442,6 +442,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "quarz_hoe_recipe"
+    },
+    {
+      "name": "ShulkerBoxRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shulker_box_recipe"
     }
   ],
   "variable_elements": [],

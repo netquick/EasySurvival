@@ -1,0 +1,24 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:hopper"
+    },
+    "1": {
+      "item": "minecraft:chest"
+    },
+    "2": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "minecraft:black_shulker_box",
+    "count": 1
+  }
+}

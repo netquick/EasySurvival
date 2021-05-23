@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "texture",
+        "Glas": "glas",
+        "schwarz": "schwarz",
+        "texture1": "texture1",
+        "texture2": "texture2"
+      },
+      "name": "default"
+    }
+  }
+}
