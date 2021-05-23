@@ -8,17 +8,17 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:basalt"
+      "item": "minecraft:quartz"
     },
     "1": {
-      "item": "easysurvival:nether_stick"
+      "item": "minecraft:quartz"
     },
     "2": {
-      "item": "easysurvival:nether_stick"
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "easysurvival:basalt_shovel",
+    "item": "easysurvival:quarz_sword",
     "count": 1
   }
 }

@@ -13,7 +13,7 @@
         "value": ""
       },
       {
-        "value": "Blocks.BASALT"
+        "value": "Items.QUARTZ"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "Blocks.BASALT"
+        "value": "Items.QUARTZ"
       },
       {
         "value": ""
@@ -31,16 +31,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:NetherStick"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BasaltSword"
+      "value": "CUSTOM:QuarzSword"
     },
-    "name": "basalt_sword_recipe",
+    "name": "quarz_sword_recipe",
     "namespace": "mod"
   }
 }

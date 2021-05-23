@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
-        "value": "Blocks.BASALT"
+        "value": "Blocks.NETHERRACK"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Blocks.NETHERRACK"
       },
       {
-        "value": "Blocks.BASALT"
+        "value": "Blocks.NETHERRACK"
       },
       {
-        "value": ""
+        "value": "Blocks.NETHERRACK"
       },
       {
-        "value": ""
+        "value": "Blocks.NETHERRACK"
       },
       {
-        "value": "CUSTOM:NetherStick"
+        "value": "Blocks.NETHERRACK"
       },
       {
-        "value": ""
+        "value": "Blocks.NETHERRACK"
+      },
+      {
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BasaltSword"
+      "value": "CUSTOM:NetherrackArmor.body"
     },
-    "name": "basalt_sword_recipe",
+    "name": "netherrack_armor_body_recipe",
     "namespace": "mod"
   }
 }

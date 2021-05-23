@@ -1,0 +1,36 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherrack"
+    },
+    "1": {
+      "item": "minecraft:netherrack"
+    },
+    "2": {
+      "item": "minecraft:netherrack"
+    },
+    "3": {
+      "item": "minecraft:netherrack"
+    },
+    "5": {
+      "item": "minecraft:netherrack"
+    },
+    "6": {
+      "item": "minecraft:netherrack"
+    },
+    "8": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "easysurvival:netherrack_armor_leggings",
+    "count": 1
+  }
+}

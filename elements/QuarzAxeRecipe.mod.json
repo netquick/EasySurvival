@@ -10,19 +10,19 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Blocks.BASALT"
-      },
-      {
-        "value": ""
+        "value": "Items.QUARTZ"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.BASALT"
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -31,16 +31,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:NetherStick"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BasaltSword"
+      "value": "CUSTOM:QuarzAxe"
     },
-    "name": "basalt_sword_recipe",
+    "name": "quarz_axe_recipe",
     "namespace": "mod"
   }
 }

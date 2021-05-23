@@ -318,24 +318,174 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "basalt_hoe_recipe"
+    },
+    {
+      "name": "NetherrackArmor",
+      "type": "armor",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "NetherrackArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_armor_helmet_recipe"
+    },
+    {
+      "name": "NetherrackArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_armor_body_recipe"
+    },
+    {
+      "name": "NetherrackArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_armor_leggings_recipe"
+    },
+    {
+      "name": "NetherrackArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_armor_boots_recipe"
+    },
+    {
+      "name": "QuarzPickaxe",
+      "type": "tool",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_pickaxe"
+    },
+    {
+      "name": "QuarzAxe",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_axe"
+    },
+    {
+      "name": "QuarzSword",
+      "type": "tool",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_sword"
+    },
+    {
+      "name": "QuarzShovel",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_shovel"
+    },
+    {
+      "name": "QuarzHoe",
+      "type": "tool",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_hoe"
+    },
+    {
+      "name": "QuarzPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_pickaxe_recipe"
+    },
+    {
+      "name": "QuarzAxeRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_axe_recipe"
+    },
+    {
+      "name": "QuarzSwordRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_sword_recipe"
+    },
+    {
+      "name": "QuarzShovelRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_shovel_recipe"
+    },
+    {
+      "name": "QuarzHoeRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quarz_hoe_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
+      "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
+      "item.easysurvival.quarz_hoe": "Quarz Hoe",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
       "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
+      "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
       "item.easysurvival.basalt_shovel": "Basalt Shovel",
       "item.easysurvival.netherrack_sword": "Netherrack Sword",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_hoe": "Basalt Hoe",
       "item.easysurvival.nether_stick": "Nether Stick",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
+      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
+      "item.easysurvival.quarz_axe": "Quarz Axe",
       "item.easysurvival.basalt_sword": "Basalt Sword",
       "item.easysurvival.netherrack_axe": "Netherrack Axe",
+      "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
       "block.easysurvival.crop": "Crop",
+      "item.easysurvival.quarz_shovel": "Quarz Shovel",
       "item.easysurvival.basalt_axe": "Basalt Axe"
     }
   },

@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Blocks.BASALT"
+        "value": "Items.QUARTZ"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.BASALT"
+        "value": "Items.QUARTZ"
       },
       {
         "value": ""
       },
       {
+        "value": "Items.STICK"
+      },
+      {
         "value": ""
       },
       {
-        "value": "CUSTOM:NetherStick"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BasaltSword"
+      "value": "CUSTOM:QuarzPickaxe"
     },
-    "name": "basalt_sword_recipe",
+    "name": "quarz_pickaxe_recipe",
     "namespace": "mod"
   }
 }
