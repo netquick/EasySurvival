@@ -170,7 +170,7 @@
       "type": "gui",
       "sortid": 19,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "tree_crop_gui"
     },
@@ -444,13 +444,13 @@
       "registry_name": "quarz_hoe_recipe"
     },
     {
-      "name": "EasyEnchantTable",
-      "type": "block",
+      "name": "ShulkerBoxRecipe",
+      "type": "recipe",
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_enchant_table"
+      "registry_name": "shulker_box_recipe"
     },
     {
       "name": "EasyEnchantTableGUI",
@@ -460,6 +460,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_enchant_table_gui"
+    },
+    {
+      "name": "EasyEnchantTable",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchant_table"
     }
   ],
   "variable_elements": [],

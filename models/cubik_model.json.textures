@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "croptexture",
+        "Glas": "glastexture",
+        "schwarz": "schwarz",
+        "texture1": "upcrop",
+        "texture2": "cropdown"
+      },
+      "name": "default"
+    }
+  }
+}

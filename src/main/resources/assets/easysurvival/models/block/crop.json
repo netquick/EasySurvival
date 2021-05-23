@@ -1,8 +1,12 @@
 {
-  "parent": "block/slab",
+  "parent": "easysurvival:custom/seedcrop",
   "textures": {
-    "bottom": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "top": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "side": "easysurvival:blocks/simple-wood-texture_1048-4655"
+    "all": "easysurvival:blocks/texture",
+    "particle": "easysurvival:blocks/texture",
+    "texture": "easysurvival:blocks/texture",
+    "Glas": "easysurvival:blocks/glas",
+    "schwarz": "easysurvival:blocks/schwarz",
+    "texture1": "easysurvival:blocks/texture1",
+    "texture2": "easysurvival:blocks/texture2"
   }
 }
