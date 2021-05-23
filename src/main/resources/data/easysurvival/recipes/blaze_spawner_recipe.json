@@ -1,28 +1,23 @@
 {
   "group": "easysurvival",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
-  ],
-  "key": {
-    "1": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:glowstone_dust"
     },
-    "3": {
+    {
       "item": "minecraft:glowstone_dust"
     },
-    "4": {
-      "item": "minecraft:torch"
-    },
-    "5": {
+    {
       "item": "minecraft:glowstone_dust"
     },
-    "7": {
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
       "item": "minecraft:glowstone_dust"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:blaze_spawn_egg",
     "count": 1
