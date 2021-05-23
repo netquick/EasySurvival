@@ -170,7 +170,7 @@
       "type": "gui",
       "sortid": 19,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tree_crop_gui"
     },
@@ -442,6 +442,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "quarz_hoe_recipe"
+    },
+    {
+      "name": "EasyEnchantTable",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchant_table"
+    },
+    {
+      "name": "EasyEnchantTableGUI",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchant_table_gui"
     }
   ],
   "variable_elements": [],
@@ -449,6 +467,7 @@
   "language_map": {
     "en_us": {
       "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
+      "block.easysurvival.easy_enchant_table": "Easy Enchant Table",
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
       "item.easysurvival.quarz_hoe": "Quarz Hoe",

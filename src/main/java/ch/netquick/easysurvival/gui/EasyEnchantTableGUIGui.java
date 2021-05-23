@@ -27,7 +27,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
-import net.minecraft.block.Blocks;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -37,11 +36,11 @@ import ch.netquick.easysurvival.EasysurvivalModElements;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
 @EasysurvivalModElements.ModElement.Tag
-public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
+public class EasyEnchantTableGUIGui extends EasysurvivalModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public TreeCropGUIGui(EasysurvivalModElements instance) {
-		super(instance, 19);
+	public EasyEnchantTableGUIGui(EasysurvivalModElements instance) {
+		super(instance, 48);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -52,12 +51,12 @@ public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("tree_crop_gui"));
+			event.getRegistry().register(containerType.setRegistryName("easy_enchant_table_gui"));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, TreeCropGUIGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, EasyEnchantTableGUIGuiWindow::new));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -76,7 +75,7 @@ public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(8);
+			this.internal = new ItemStackHandler(2);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -114,53 +113,9 @@ public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(Blocks.ACACIA_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SPRUCE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.BIRCH_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.JUNGLE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.DARK_OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.CACTUS, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.MELON, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SUGAR_CANE, (int) (1)).getItem() == stack.getItem());
-				}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 57) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 79, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 97, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 115, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 151, 47) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 57) {
 			}));
 			int si;
 			int sj;
@@ -187,18 +142,18 @@ public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 8) {
-					if (!this.mergeItemStack(itemstack1, 8, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 8, false)) {
-					if (index < 8 + 27) {
-						if (!this.mergeItemStack(itemstack1, 8 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 8, 8 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
