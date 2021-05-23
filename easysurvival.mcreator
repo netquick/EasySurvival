@@ -166,23 +166,6 @@
       "registry_name": "tree_crop"
     },
     {
-      "name": "DuraChecker",
-      "type": "procedure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dura_checker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "TreeCropGUI",
       "type": "gui",
       "sortid": 19,
