@@ -451,24 +451,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shulker_box_recipe"
-    },
-    {
-      "name": "EasyEnchantTableGUI",
-      "type": "gui",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_enchant_table_gui"
-    },
-    {
-      "name": "EasyEnchantTable",
-      "type": "block",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_enchant_table"
     }
   ],
   "variable_elements": [],
@@ -476,7 +458,6 @@
   "language_map": {
     "en_us": {
       "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
-      "block.easysurvival.easy_enchant_table": "Easy Enchant Table",
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
       "item.easysurvival.quarz_hoe": "Quarz Hoe",
