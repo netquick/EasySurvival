@@ -471,6 +471,15 @@
       "registry_name": "tree_crop_recipe"
     },
     {
+      "name": "NetherBucket",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_bucket"
+    },
+    {
       "name": "NetherLadderRecipe",
       "type": "recipe",
       "sortid": 50,
@@ -498,13 +507,22 @@
       "registry_name": "nether_forge"
     },
     {
-      "name": "NetherBucket",
+      "name": "SlimeEggRecipe",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "nether_bucket"
+      "registry_name": "slime_egg_recipe"
+    },
+    {
+      "name": "BlazeSpawnerRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blaze_spawner_recipe"
     }
   ],
   "variable_elements": [],
