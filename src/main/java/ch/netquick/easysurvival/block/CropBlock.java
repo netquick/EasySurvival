@@ -129,7 +129,7 @@ public class CropBlock extends EasysurvivalModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 50);
 		}
 
 		@Override
@@ -146,7 +146,7 @@ public class CropBlock extends EasysurvivalModElements.ModElement {
 				$_dependencies.put("world", world);
 				CropUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 50);
 		}
 
 		@Override
