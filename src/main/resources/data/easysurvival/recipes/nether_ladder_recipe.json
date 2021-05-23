@@ -1,0 +1,36 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "easysurvival:nether_stick"
+    },
+    "2": {
+      "item": "easysurvival:nether_stick"
+    },
+    "3": {
+      "item": "easysurvival:nether_stick"
+    },
+    "4": {
+      "item": "easysurvival:nether_stick"
+    },
+    "5": {
+      "item": "easysurvival:nether_stick"
+    },
+    "6": {
+      "item": "easysurvival:nether_stick"
+    },
+    "8": {
+      "item": "easysurvival:nether_stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:ladder",
+    "count": 4
+  }
+}

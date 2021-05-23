@@ -469,6 +469,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tree_crop_recipe"
+    },
+    {
+      "name": "NetherLadderRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_ladder_recipe"
+    },
+    {
+      "name": "NetherWorkbench",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_workbench"
+    },
+    {
+      "name": "NetherForge",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_forge"
+    },
+    {
+      "name": "NetherBucket",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_bucket"
     }
   ],
   "variable_elements": [],
