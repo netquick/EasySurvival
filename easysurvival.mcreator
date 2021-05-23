@@ -170,7 +170,7 @@
       "type": "gui",
       "sortid": 19,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tree_crop_gui"
     },

@@ -117,7 +117,7 @@ public class TreeCropGUIGui extends EasysurvivalModElements.ModElement {
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 47) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(Blocks.ACACIA_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SPRUCE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.BIRCH_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.JUNGLE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.DARK_OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.CACTUS, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.MELON, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SUGAR_CANE, (int) (1)).getItem() == stack.getItem());
+					return (new ItemStack(Blocks.OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.ACACIA_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SPRUCE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.BIRCH_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.JUNGLE_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.DARK_OAK_SAPLING, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.CACTUS, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.MELON, (int) (1)).getItem() == stack.getItem() || new ItemStack(Blocks.SUGAR_CANE, (int) (1)).getItem() == stack.getItem());
 				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 47) {

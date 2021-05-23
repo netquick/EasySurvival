@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Blocks.REEDS"
+            "value": "Blocks.SAPLING#0"
           },
           "id": 0,
           "disableStackInteraction": false,

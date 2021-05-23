@@ -1,8 +1,8 @@
 {
   "parent": "easysurvival:custom/cubik_model",
   "textures": {
-    "all": "easysurvival:blocks/croptexture",
-    "particle": "easysurvival:blocks/croptexture",
+    "all": "easysurvival:blocks/simple-wood-texture_1048-4655",
+    "particle": "easysurvival:blocks/simple-wood-texture_1048-4655",
     "texture": "easysurvival:blocks/croptexture",
     "Glas": "easysurvival:blocks/glastexture",
     "schwarz": "easysurvival:blocks/schwarz",
