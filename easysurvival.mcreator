@@ -456,7 +456,7 @@
       "name": "EasyEnchantTableGUI",
       "type": "gui",
       "sortid": 48,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_enchant_table_gui"
@@ -465,7 +465,7 @@
       "name": "EasyEnchantTable",
       "type": "block",
       "sortid": 47,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_enchant_table"
