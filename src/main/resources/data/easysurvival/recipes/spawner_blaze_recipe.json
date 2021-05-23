@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "minecraft:blaze_spawn_egg",
+    "item": "easysurvival:spawner_blaze",
     "count": 1
   }
 }

@@ -1,0 +1,16 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "minecraft:oak_leaves"
+    }
+  ],
+  "result": {
+    "item": "easysurvival:spawner_slime",
+    "count": 1
+  }
+}

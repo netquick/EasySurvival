@@ -507,49 +507,127 @@
       "registry_name": "nether_forge"
     },
     {
-      "name": "SlimeEggRecipe",
-      "type": "recipe",
-      "sortid": 51,
+      "name": "SpawnerBlaze",
+      "type": "block",
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "slime_egg_recipe"
+      "registry_name": "spawner_blaze"
     },
     {
-      "name": "BlazeSpawnerRecipe",
-      "type": "recipe",
-      "sortid": 50,
+      "name": "SpawnerBlazeUpdateTick",
+      "type": "procedure",
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blaze_spawner_recipe"
+      "registry_name": "spawner_blaze_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerBlazeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_blaze_recipe"
+    },
+    {
+      "name": "SpawnerSlimeUpdateTick",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_slime_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerSlime",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_slime"
+    },
+    {
+      "name": "SpawnerSlimeRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_slime_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
-      "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
-      "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
-      "item.easysurvival.quarz_hoe": "Quarz Hoe",
       "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
-      "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
-      "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
-      "item.easysurvival.basalt_shovel": "Basalt Shovel",
-      "item.easysurvival.netherrack_sword": "Netherrack Sword",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
-      "item.easysurvival.basalt_hoe": "Basalt Hoe",
-      "item.easysurvival.nether_stick": "Nether Stick",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.quarz_axe": "Quarz Axe",
       "item.easysurvival.basalt_sword": "Basalt Sword",
-      "item.easysurvival.netherrack_axe": "Netherrack Axe",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
       "block.easysurvival.crop": "Crop",
+      "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
+      "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
+      "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
+      "item.easysurvival.quarz_hoe": "Quarz Hoe",
+      "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
+      "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
+      "item.easysurvival.basalt_shovel": "Basalt Shovel",
+      "item.easysurvival.netherrack_sword": "Netherrack Sword",
+      "item.easysurvival.basalt_hoe": "Basalt Hoe",
+      "item.easysurvival.nether_stick": "Nether Stick",
+      "block.easysurvival.spawner_blaze": "Spawner Blaze",
+      "item.easysurvival.netherrack_axe": "Netherrack Axe",
       "item.easysurvival.quarz_shovel": "Quarz Shovel",
+      "block.easysurvival.spawner_slime": "Spawner Slime",
       "item.easysurvival.basalt_axe": "Basalt Axe"
     }
   },

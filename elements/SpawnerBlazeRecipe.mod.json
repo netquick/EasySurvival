@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.SPAWN_EGG#61"
+      "value": "CUSTOM:SpawnerBlaze"
     },
-    "name": "blaze_spawner_recipe",
+    "name": "spawner_blaze_recipe",
     "namespace": "mod"
   }
 }

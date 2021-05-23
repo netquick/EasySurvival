@@ -7,7 +7,7 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.SPAWN_EGG#55"
+      "value": "CUSTOM:SpawnerSlime"
     },
-    "name": "slime_egg_recipe",
+    "name": "spawner_slime_recipe",
     "namespace": "mod"
   }
 }
