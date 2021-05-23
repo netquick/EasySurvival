@@ -123,7 +123,7 @@ public class TreeCropBlock extends EasysurvivalModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 25);
 		}
 
 		@Override
@@ -140,7 +140,7 @@ public class TreeCropBlock extends EasysurvivalModElements.ModElement {
 				$_dependencies.put("world", world);
 				TreeCropUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 25);
 		}
 
 		@Override
