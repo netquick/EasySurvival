@@ -451,6 +451,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shulker_box_recipe"
+    },
+    {
+      "name": "EnderpPearlRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enderp_pearl_recipe"
     }
   ],
   "variable_elements": [],
