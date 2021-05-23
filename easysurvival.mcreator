@@ -599,6 +599,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawner_slime_recipe"
+    },
+    {
+      "name": "NetherWartRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_wart_recipe"
     }
   ],
   "variable_elements": [],
