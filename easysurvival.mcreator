@@ -460,6 +460,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enderp_pearl_recipe"
+    },
+    {
+      "name": "TreeCropRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_crop_recipe"
     }
   ],
   "variable_elements": [],
