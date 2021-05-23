@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "easysurvival:block/crop"
+    },
+    "type=top": {
+      "model": "easysurvival:block/crop_top"
+    },
+    "type=double": {
+      "model": "easysurvival:block/crop_full"
+    }
+  }
+}

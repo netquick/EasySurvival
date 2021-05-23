@@ -1,0 +1,222 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "NetherStick",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_stick"
+    },
+    {
+      "name": "NetherStickRecipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_stick_recipe"
+    },
+    {
+      "name": "Crop",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crop"
+    },
+    {
+      "name": "CropGUI",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crop_gui"
+    },
+    {
+      "name": "CropUpdateTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crop_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetherrackPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_pickaxe"
+    },
+    {
+      "name": "NetherrackAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_axe"
+    },
+    {
+      "name": "NetherrackSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_sword"
+    },
+    {
+      "name": "NetherrackShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_shovel"
+    },
+    {
+      "name": "NetherrackHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_hoe"
+    },
+    {
+      "name": "NetherrackPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_pickaxe_recipe"
+    },
+    {
+      "name": "NetherrackAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_axe_recipe"
+    },
+    {
+      "name": "NetherrackSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_sword_recipe"
+    },
+    {
+      "name": "NetherrackShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_shovel_recipe"
+    },
+    {
+      "name": "NetherrackHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherrack_hoe_recipe"
+    },
+    {
+      "name": "TreeCrop",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_crop"
+    },
+    {
+      "name": "DuraChecker",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dura_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.easysurvival.nether_stick": "Nether Stick",
+      "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
+      "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.netherrack_axe": "Netherrack Axe",
+      "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
+      "block.easysurvival.crop": "Crop",
+      "item.easysurvival.netherrack_sword": "Netherrack Sword",
+      "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "easysurvival",
+    "modName": "EasySurvival",
+    "version": "1.0.0",
+    "author": "netqu, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "ch.netquick.easysurvival",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

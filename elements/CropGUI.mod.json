@@ -1,0 +1,132 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.POTATO"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 133,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 169,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 187,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 205,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 223,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 241,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 259,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 277,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "GrowCrop",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "GrowCrop",
+          "x": 133,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Seed",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Seed",
+          "x": 133,
+          "y": 74
+        }
+      }
+    ]
+  }
+}

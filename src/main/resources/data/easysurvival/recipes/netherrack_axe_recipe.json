@@ -1,0 +1,30 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherrack"
+    },
+    "1": {
+      "item": "minecraft:netherrack"
+    },
+    "2": {
+      "item": "minecraft:netherrack"
+    },
+    "3": {
+      "item": "easysurvival:nether_stick"
+    },
+    "5": {
+      "item": "easysurvival:nether_stick"
+    }
+  },
+  "result": {
+    "item": "easysurvival:netherrack_axe",
+    "count": 1
+  }
+}

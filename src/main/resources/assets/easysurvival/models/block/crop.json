@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "easysurvival:blocks/simple-wood-texture_1048-4655",
+    "top": "easysurvival:blocks/simple-wood-texture_1048-4655",
+    "side": "easysurvival:blocks/simple-wood-texture_1048-4655"
+  }
+}
