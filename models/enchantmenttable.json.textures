@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Cover": "cover",
+        "texture": "enchantmenttexture",
+        "TopTexture": "toptexture",
+        "Paper": "paper"
+      },
+      "name": "default"
+    }
+  }
+}

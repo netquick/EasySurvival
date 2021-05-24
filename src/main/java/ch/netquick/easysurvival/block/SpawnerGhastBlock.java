@@ -31,15 +31,15 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
-import ch.netquick.easysurvival.procedures.SpawnerSlimeUpdateTickProcedure;
+import ch.netquick.easysurvival.procedures.SpawnerGhastUpdateTickProcedure;
 import ch.netquick.easysurvival.EasysurvivalModElements;
 
 @EasysurvivalModElements.ModElement.Tag
-public class SpawnerSlimeBlock extends EasysurvivalModElements.ModElement {
-	@ObjectHolder("easysurvival:spawner_slime")
+public class SpawnerGhastBlock extends EasysurvivalModElements.ModElement {
+	@ObjectHolder("easysurvival:spawner_ghast")
 	public static final Block block = null;
-	public SpawnerSlimeBlock(EasysurvivalModElements instance) {
-		super(instance, 57);
+	public SpawnerGhastBlock(EasysurvivalModElements instance) {
+		super(instance, 60);
 	}
 
 	@Override
@@ -58,7 +58,7 @@ public class SpawnerSlimeBlock extends EasysurvivalModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
-			setRegistryName("spawner_slime");
+			setRegistryName("spawner_ghast");
 		}
 
 		@Override
@@ -95,7 +95,7 @@ public class SpawnerSlimeBlock extends EasysurvivalModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				SpawnerSlimeUpdateTickProcedure.executeProcedure($_dependencies);
+				SpawnerGhastUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
 		}

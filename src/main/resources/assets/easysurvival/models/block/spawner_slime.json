@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "easysurvival:custom/spawner",
   "textures": {
-    "down": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "up": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "north": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "east": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "south": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "west": "easysurvival:blocks/simple-wood-texture_1048-4655",
-    "particle": "easysurvival:blocks/simple-wood-texture_1048-4655"
+    "all": "easysurvival:blocks/monster_spawner",
+    "particle": "easysurvival:blocks/monster_spawner",
+    "texture": "easysurvival:blocks/schwarz"
   }
 }

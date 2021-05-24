@@ -608,18 +608,112 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nether_wart_recipe"
+    },
+    {
+      "name": "SpawnerGhastUpdateTick",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_ghast_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerGhast",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_ghast"
+    },
+    {
+      "name": "SpawnerGhasRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_ghas_recipe"
+    },
+    {
+      "name": "EasyEnchantmentTable",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table"
+    },
+    {
+      "name": "EasyEnchantmentTableUpdateTick",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUI",
+      "type": "gui",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gui"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
-      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.quarz_axe": "Quarz Axe",
+      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.basalt_sword": "Basalt Sword",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
       "block.easysurvival.crop": "Crop",
@@ -629,11 +723,13 @@
       "item.easysurvival.quarz_hoe": "Quarz Hoe",
       "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
       "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
+      "block.easysurvival.spawner_ghast": "Spawner Ghast",
       "item.easysurvival.basalt_shovel": "Basalt Shovel",
       "item.easysurvival.netherrack_sword": "Netherrack Sword",
       "item.easysurvival.basalt_hoe": "Basalt Hoe",
       "item.easysurvival.nether_stick": "Nether Stick",
       "block.easysurvival.spawner_blaze": "Spawner Blaze",
+      "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
       "item.easysurvival.netherrack_axe": "Netherrack Axe",
       "item.easysurvival.quarz_shovel": "Quarz Shovel",
       "block.easysurvival.spawner_slime": "Spawner Slime",

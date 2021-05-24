@@ -13,34 +13,34 @@
         "value": ""
       },
       {
-        "value": "Blocks.KELP"
+        "value": "Blocks.OBSIDIAN"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Blocks.OBSIDIAN"
       },
       {
-        "value": "Blocks.LEAVES"
+        "value": "Items.GHAST_TEAR"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Blocks.OBSIDIAN"
       },
       {
         "value": ""
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SpawnerSlime"
+      "value": "CUSTOM:SpawnerGhast"
     },
-    "name": "spawner_slime_recipe",
+    "name": "spawner_ghas_recipe",
     "namespace": "mod"
   }
 }

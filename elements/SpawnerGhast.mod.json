@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Spawner Blaze",
+    "name": "Spawner Ghast",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -102,7 +102,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "SpawnerBlazeUpdateTick"
+      "name": "SpawnerGhastUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

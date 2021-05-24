@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "monster_spawner",
+    "texture": "enchantmenttexture",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "spawner:default",
-    "rotationMode": 0,
+    "customModelName": "enchantmenttable:default",
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Spawner Blaze",
+    "name": "Easy Enchantment Table",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -47,14 +47,14 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "enchantPowerBonus": 0.0,
+    "enchantPowerBonus": 15.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 100,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -77,16 +77,16 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "SMOKE_NORMAL"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "hasInventory": true,
+    "guiBoundTo": "EasyEnchantmentTableGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -102,7 +102,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "SpawnerBlazeUpdateTick"
+      "name": "EasyEnchantmentTableUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
