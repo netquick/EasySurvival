@@ -8,6 +8,7 @@ Features:
 - CropPlot - put in a seed and it grows your plants. Works for Wheat, Melon, Pumpkin, Beetroot, Carrot and Potato
 - TreePlot - same for trees and Bamboo, Sugar Cane, Cactus
 - Nether Recipes - you can now build common tools and items with stuff from nether:
+   - Nether Sticks can be used as replacement for wooden sticks on Nether Tools
    - Netherrack lets you craft tools and armor with stats of wood/leather
    - Basalt gives items equal to stone
    - Netherquarz is equivalent to iron and lets you craft iron ingots from it
