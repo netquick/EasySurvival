@@ -14,7 +14,7 @@ Features:
    - Bucket, Ladder, Workbench, Forge can be crafted from Netherrack instead of Wood
    - Simple recipe for Shulker Box (2 Hoppers and 1 Chest) to avoid having to drop loads of blocks while exploring
    - Enderpearls can be crafted by cheaper mats
-- Spawners for several mobs: actually there are Spawners for Blaze, Ghast and Slime
+- Spawners for several mobs: actually there are Spawners for Blaze, Ghast and Slime (spawning can be deactivated using gamerule "spawnerActive")
 - EasyEnchantmentTable for cheap Enchants (5 Lapis per Enchant)
 - EasyForge smelts ore, glass and gives coal from oak
 - EasyTeleporter - Teleporter plate connecting two locations
@@ -23,3 +23,5 @@ Features:
 
 Upcoming features:
 - Dedicated Storage
+- EasyFridge
+
