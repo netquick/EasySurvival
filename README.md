@@ -15,11 +15,11 @@ Features:
    - Simple recipe for Shulker Box (2 Hoppers and 1 Chest) to avoid having to drop loads of blocks while exploring
    - Enderpearls can be crafted by cheaper mats
 - Spawners for several mobs: actually there are Spawners for Blaze, Ghast and Slime
+- EasyEnchantmentTable for cheap Enchants (5 Lapis per Enchant)
+- EasyForge smelts ore, glass and gives coal from oak
+- EasyTeleporter - Teleporter plate connecting two locations
+
 
 
 Upcoming features:
-- EasyEnchantment Table
-- InstaForge
-- Teleport
 - Dedicated Storage
-- 
