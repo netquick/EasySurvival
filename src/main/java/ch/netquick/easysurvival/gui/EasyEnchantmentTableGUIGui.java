@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.ContainerType;
@@ -32,6 +33,16 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem9Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem8Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem7Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem6Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem5Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem4Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem3Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem2Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUItakeItem1Procedure;
+import ch.netquick.easysurvival.procedures.EasyEnchantmentTableGUIresetProcedure;
 import ch.netquick.easysurvival.EasysurvivalModElements;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
@@ -75,7 +86,7 @@ public class EasyEnchantmentTableGUIGui extends EasysurvivalModElements.ModEleme
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(3);
+			this.internal = new ItemStackHandler(11);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -114,14 +125,168 @@ public class EasyEnchantmentTableGUIGui extends EasysurvivalModElements.ModEleme
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 151, 12) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(0, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(0, 2, b.getCount() - a.getCount());
+				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(1, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(1, 2, b.getCount() - a.getCount());
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 25, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(2, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(2, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(3, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(3, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 61, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(4, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(4, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(5, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(5, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 97, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(6, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(6, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 115, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(7, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(7, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 133, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(8, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(8, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 151, 57) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(9, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(9, 2, b.getCount() - a.getCount());
+				}
+			}));
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 151, 35) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(10, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(10, 2, b.getCount() - a.getCount());
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return (new ItemStack(Items.LAPIS_LAZULI, (int) (1)).getItem() == stack.getItem());
+				}
 			}));
 			int si;
 			int sj;
@@ -148,18 +313,18 @@ public class EasyEnchantmentTableGUIGui extends EasysurvivalModElements.ModEleme
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 3) {
-					if (!this.mergeItemStack(itemstack1, 3, this.inventorySlots.size(), true)) {
+				if (index < 11) {
+					if (!this.mergeItemStack(itemstack1, 11, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 3, false)) {
-					if (index < 3 + 27) {
-						if (!this.mergeItemStack(itemstack1, 3 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 11, false)) {
+					if (index < 11 + 27) {
+						if (!this.mergeItemStack(itemstack1, 11 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 3, 3 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 11, 11 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -377,5 +542,236 @@ public class EasyEnchantmentTableGUIGui extends EasysurvivalModElements.ModEleme
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUIresetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 0 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUIresetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 1 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem1Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 1 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem1Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem2Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem2Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 3 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem3Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 3 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem3Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 4 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem4Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 4 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem4Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 5 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem5Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 5 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem5Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 6 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem6Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 6 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem6Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 7 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem7Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 7 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem7Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 8 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem8Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 8 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem8Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 9 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem9Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 9 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUItakeItem9Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 10 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUIresetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 10 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyEnchantmentTableGUIresetProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

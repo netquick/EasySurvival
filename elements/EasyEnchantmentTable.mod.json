@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "MISC"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -47,12 +47,12 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "enchantPowerBonus": 15.0,
+    "enchantPowerBonus": 14.5,
     "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "MISCELLANEOUS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "WOOD"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -87,7 +87,7 @@
     "hasInventory": true,
     "guiBoundTo": "EasyEnchantmentTableGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 11,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

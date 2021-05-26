@@ -66,6 +66,9 @@ public class EasyEnchantmentTableGUIGuiWindow extends ContainerScreen<EasyEnchan
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
+		this.font.drawString(ms, "EasyEnchant", 6, 7, -12829636);
+		this.font.drawString(ms, "Item", 126, 14, -12829636);
+		this.font.drawString(ms, "Lapis Lazuli", 87, 37, -12829636);
 	}
 
 	@Override

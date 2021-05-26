@@ -3,6 +3,6 @@
   "textures": {
     "all": "easysurvival:blocks/monster_spawner",
     "particle": "easysurvival:blocks/monster_spawner",
-    "texture": "easysurvival:blocks/schwarz"
+    "texture": "easysurvival:blocks/spawnertexture"
   }
 }

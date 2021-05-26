@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "texture": "schwarz"
+        "texture": "spawnertexture"
       },
       "name": "default"
     }

@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Spawners active",
+    "description": "Sets if custom spawners are active or inactive",
+    "category": "SPAWNING",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

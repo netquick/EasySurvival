@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "fridgefront",
+        "Sides": "sides"
+      },
+      "name": "default"
+    }
+  }
+}

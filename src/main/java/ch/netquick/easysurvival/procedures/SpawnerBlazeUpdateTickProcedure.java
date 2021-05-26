@@ -13,6 +13,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
+import ch.netquick.easysurvival.world.SpawnersActiveGameRule;
 import ch.netquick.easysurvival.EasysurvivalModElements;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
@@ -47,13 +48,15 @@ public class SpawnerBlazeUpdateTickProcedure extends EasysurvivalModElements.Mod
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new BlazeEntity(EntityType.BLAZE, (World) world);
-			entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (((world.getWorldInfo().getGameRulesInstance().getBoolean(SpawnersActiveGameRule.gamerule)) == (true))) {
+			if (world instanceof ServerWorld) {
+				Entity entityToSpawn = new BlazeEntity(EntityType.BLAZE, (World) world);
+				entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
+				if (entityToSpawn instanceof MobEntity)
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+				world.addEntity(entityToSpawn);
+			}
 		}
 	}
 }

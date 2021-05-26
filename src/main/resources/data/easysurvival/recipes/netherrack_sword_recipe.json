@@ -14,7 +14,7 @@
       "item": "minecraft:netherrack"
     },
     "2": {
-      "item": "easysurvival:nether_stick"
+      "tag": "forge:tag_stick"
     }
   },
   "result": {

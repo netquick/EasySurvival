@@ -11,10 +11,10 @@
       "item": "minecraft:netherrack"
     },
     "1": {
-      "item": "easysurvival:nether_stick"
+      "tag": "forge:tag_stick"
     },
     "2": {
-      "item": "easysurvival:nether_stick"
+      "tag": "forge:tag_stick"
     }
   },
   "result": {

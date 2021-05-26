@@ -19,6 +19,12 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUIreset"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUIreset"
+          },
           "name": "Slot #0",
           "x": 276,
           "y": 48
@@ -30,6 +36,12 @@
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem1"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem1"
+          },
           "name": "Slot #1",
           "x": 132,
           "y": 93
@@ -44,9 +56,214 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem2"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem2"
+          },
           "name": "Slot #2",
           "x": 150,
           "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem3"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem3"
+          },
+          "name": "Slot #3",
+          "x": 168,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem4"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem4"
+          },
+          "name": "Slot #4",
+          "x": 186,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem5"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem5"
+          },
+          "name": "Slot #5",
+          "x": 204,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem6"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem6"
+          },
+          "name": "Slot #6",
+          "x": 222,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem7"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem7"
+          },
+          "name": "Slot #7",
+          "x": 240,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem8"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem8"
+          },
+          "name": "Slot #8",
+          "x": 258,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUItakeItem9"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUItakeItem9"
+          },
+          "name": "Slot #9",
+          "x": 276,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.DYE#4"
+          },
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyEnchantmentTableGUIreset"
+          },
+          "onStackTransfer": {
+            "name": "EasyEnchantmentTableGUIreset"
+          },
+          "name": "Slot #10",
+          "x": 276,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EasyEnchant",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "EasyEnchant",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Item",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Item",
+          "x": 252,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lapis Lazuli",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lapis Lazuli",
+          "x": 213,
+          "y": 74
         }
       }
     ]

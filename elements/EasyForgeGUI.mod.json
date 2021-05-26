@@ -1,0 +1,66 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 168,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 240,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EasyForge",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "EasyForge",
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": ">>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": ">>",
+          "x": 208,
+          "y": 88
+        }
+      }
+    ]
+  }
+}

@@ -89,8 +89,7 @@ public class EasyEnchantmentTableBlock extends EasysurvivalModElements.ModElemen
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
@@ -107,8 +106,8 @@ public class EasyEnchantmentTableBlock extends EasysurvivalModElements.ModElemen
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
+					.notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("easy_enchantment_table");
 		}
@@ -139,7 +138,7 @@ public class EasyEnchantmentTableBlock extends EasysurvivalModElements.ModElemen
 
 		@Override
 		public float getEnchantPowerBonus(BlockState state, IWorldReader world, BlockPos pos) {
-			return 15f;
+			return 14.5f;
 		}
 
 		@Override
@@ -251,7 +250,7 @@ public class EasyEnchantmentTableBlock extends EasysurvivalModElements.ModElemen
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(11, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}

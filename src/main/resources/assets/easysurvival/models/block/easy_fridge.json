@@ -1,0 +1,9 @@
+{
+  "parent": "easysurvival:custom/fridge",
+  "textures": {
+    "all": "easysurvival:blocks/fridgefront",
+    "particle": "easysurvival:blocks/fridgefront",
+    "texture": "easysurvival:blocks/fridgefront",
+    "Sides": "easysurvival:blocks/sides"
+  }
+}

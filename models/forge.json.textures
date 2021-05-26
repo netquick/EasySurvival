@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "forgeTop": "forgetop",
+        "ForgeFront": "forgefront",
+        "ForgeSide": "forgeside"
+      },
+      "name": "default"
+    }
+  }
+}

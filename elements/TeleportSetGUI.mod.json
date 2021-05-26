@@ -1,0 +1,50 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Name",
+          "width": 120,
+          "height": 20,
+          "name": "TeleportName",
+          "x": 153,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set",
+          "width": 40,
+          "height": 20,
+          "name": "Set",
+          "x": 192,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Set Teleport",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Set Teleport",
+          "x": 182,
+          "y": 52
+        }
+      }
+    ]
+  }
+}

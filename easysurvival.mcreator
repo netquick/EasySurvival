@@ -702,21 +702,591 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_enchantment_table_gui"
+    },
+    {
+      "name": "EasyEnchantmentTableGUIClear",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gui_clear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUIreset",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_ireset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem1",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem2",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem3",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem4",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem5",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem6",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem7",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_7",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem8",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_8",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem9",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_gu_itake_item_9",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TagChest",
+      "type": "tag",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_chest"
+    },
+    {
+      "name": "TagBoots",
+      "type": "tag",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_boots"
+    },
+    {
+      "name": "TagArmor",
+      "type": "tag",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_armor"
+    },
+    {
+      "name": "EasyEnchantmentTableRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_enchantment_table_recipe"
+    },
+    {
+      "name": "EasyAnvil",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil"
+    },
+    {
+      "name": "EasyAnvilGUI",
+      "type": "gui",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_gui"
+    },
+    {
+      "name": "EasyAnvilButtonClick",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_button_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyAnvilRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_recipe"
+    },
+    {
+      "name": "DedicatedStorageGUI",
+      "type": "gui",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dedicated_storage_gui"
+    },
+    {
+      "name": "SpawnersActive",
+      "type": "gamerule",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawnersActive",
+      "metadata": {
+        "type": "boolean"
+      }
+    },
+    {
+      "name": "EasyForgeUpdateTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyForge",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge"
+    },
+    {
+      "name": "EasyForgeGUI",
+      "type": "gui",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_gui"
+    },
+    {
+      "name": "EasyForgeRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_recipe"
+    },
+    {
+      "name": "TagStick",
+      "type": "tag",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_stick"
+    },
+    {
+      "name": "TeleporterPlate",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_plate"
+    },
+    {
+      "name": "TeleportSetGUI",
+      "type": "gui",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleport_set_gui"
+    },
+    {
+      "name": "TeleporterGUI",
+      "type": "gui",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_gui"
+    },
+    {
+      "name": "TeleporterProc",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyFridge",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.easysurvival.tree_crop": "Tree Crop",
+      "gamerule.spawnersActive": "Spawners active",
       "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
+      "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
-      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.quarz_axe": "Quarz Axe",
+      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.basalt_sword": "Basalt Sword",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
       "block.easysurvival.crop": "Crop",
+      "block.easysurvival.easy_forge": "Easy Forge",
+      "gamerule.spawnersActive.description": "Sets if custom spawners are active or inactive",
       "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
@@ -731,8 +1301,10 @@
       "block.easysurvival.spawner_blaze": "Spawner Blaze",
       "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
       "item.easysurvival.netherrack_axe": "Netherrack Axe",
+      "block.easysurvival.easy_fridge": "Easy Fridge",
       "item.easysurvival.quarz_shovel": "Quarz Shovel",
       "block.easysurvival.spawner_slime": "Spawner Slime",
+      "block.easysurvival.easy_anvil": "Easy Anvil",
       "item.easysurvival.basalt_axe": "Basalt Axe"
     }
   },

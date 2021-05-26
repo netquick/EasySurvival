@@ -1,0 +1,76 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Teleport 1",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Teleport 1",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Teleport 2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Teleport 2",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EasyTeleport",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "EasyTeleport",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport",
+          "width": 65,
+          "height": 20,
+          "name": "Teleport",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport",
+          "width": 65,
+          "height": 20,
+          "name": "Teleport",
+          "x": 204,
+          "y": 89
+        }
+      }
+    ]
+  }
+}

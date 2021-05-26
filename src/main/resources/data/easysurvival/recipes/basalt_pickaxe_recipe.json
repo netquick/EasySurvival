@@ -17,10 +17,10 @@
       "item": "minecraft:basalt"
     },
     "4": {
-      "item": "easysurvival:nether_stick"
+      "tag": "forge:tag_stick"
     },
     "7": {
-      "item": "easysurvival:nether_stick"
+      "tag": "forge:tag_stick"
     }
   },
   "result": {
