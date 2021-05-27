@@ -1277,6 +1277,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "quarz_block"
+    },
+    {
+      "name": "EasyTeleportRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_teleport_recipe"
     }
   ],
   "variable_elements": [],
@@ -1284,8 +1293,8 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
