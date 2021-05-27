@@ -1277,6 +1277,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "quarz_block"
+    },
+    {
+      "name": "EasyTeleportRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_teleport_recipe"
     }
   ],
   "variable_elements": [],
