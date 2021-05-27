@@ -1,0 +1,39 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:feather"
+    },
+    "1": {
+      "item": "minecraft:ghast_tear"
+    },
+    "2": {
+      "item": "minecraft:feather"
+    },
+    "3": {
+      "item": "minecraft:feather"
+    },
+    "4": {
+      "item": "minecraft:end_stone"
+    },
+    "5": {
+      "item": "minecraft:feather"
+    },
+    "6": {
+      "item": "minecraft:feather"
+    },
+    "8": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "minecraft:elytra",
+    "count": 1
+  }
+}
