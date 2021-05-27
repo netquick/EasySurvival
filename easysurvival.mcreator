@@ -1286,6 +1286,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_teleport_recipe"
+    },
+    {
+      "name": "Elytra",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "elytra"
     }
   ],
   "variable_elements": [],
