@@ -3,7 +3,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "3 5",
+    "345",
     "678"
   ],
   "key": {
@@ -18,6 +18,9 @@
     },
     "3": {
       "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "minecraft:lava_bucket"
     },
     "5": {
       "item": "minecraft:obsidian"
