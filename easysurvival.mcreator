@@ -1300,7 +1300,7 @@
       "name": "EasyFridgeGUI",
       "type": "gui",
       "sortid": 102,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_fridge_gui"
@@ -1371,7 +1371,7 @@
       "name": "PortableCraftingTable",
       "type": "item",
       "sortid": 102,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "portable_crafting_table"
@@ -1430,7 +1430,7 @@
       "name": "PortableCraftingTableGUI",
       "type": "gui",
       "sortid": 103,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "portable_crafting_table_gui"
@@ -1441,8 +1441,8 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
