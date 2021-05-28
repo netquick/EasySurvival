@@ -1,28 +1,11 @@
 package ch.netquick.easysurvival.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Hand;
-import net.minecraft.util.Direction;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-
-import java.util.Map;
-
-import ch.netquick.easysurvival.EasysurvivalModElements;
-import ch.netquick.easysurvival.EasysurvivalMod;
-
 @EasysurvivalModElements.ModElement.Tag
 public class PlaceCraftingTableProcedure extends EasysurvivalModElements.ModElement {
+
 	public PlaceCraftingTableProcedure(EasysurvivalModElements instance) {
 		super(instance, 109);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -36,8 +19,10 @@ public class PlaceCraftingTableProcedure extends EasysurvivalModElements.ModElem
 				EasysurvivalMod.LOGGER.warn("Failed to load dependency world for procedure PlaceCraftingTable!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (((world.getBlockState(new BlockPos(
 				(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 						entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1, entity.getLook(1f).z * 1),
@@ -104,9 +89,12 @@ public class PlaceCraftingTableProcedure extends EasysurvivalModElements.ModElem
 				BlockState _bs = world.getBlockState(_bp);
 				if (_tileEntity != null)
 					_tileEntity.getTileData().putString("portabletag", (entity.getDisplayName().getString()));
+
 				if (world instanceof World)
 					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 		}
+
 	}
+
 }
