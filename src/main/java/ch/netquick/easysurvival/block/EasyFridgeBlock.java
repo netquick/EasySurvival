@@ -71,7 +71,7 @@ public class EasyFridgeBlock extends EasysurvivalModElements.ModElement {
 	@ObjectHolder("easysurvival:easy_fridge")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EasyFridgeBlock(EasysurvivalModElements instance) {
-		super(instance, 103);
+		super(instance, 98);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
