@@ -22,8 +22,8 @@
 		},
 		{
 			"__comment": "Box3",
-			"from": [ 1, 1, 15 ],
-			"to": [ 15, 15, 16 ],
+			"from": [ 1, 1, -1 ],
+			"to": [ 15, 15, 0 ],
 			"faces": {
 				"down": { "uv": [ 1, 0, 15, 1 ], "texture": "#texture" },
 				"up": { "uv": [ 1, 15, 15, 16 ], "texture": "#texture" },

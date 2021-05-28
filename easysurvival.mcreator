@@ -1295,6 +1295,107 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "elytra"
+    },
+    {
+      "name": "PortableCraftingTable",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table"
+    },
+    {
+      "name": "PortableCraftingTableGUI",
+      "type": "gui",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_gui"
+    },
+    {
+      "name": "PortableCraftingTableRightClickedInAir",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortableCraftingTableItemTaken",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_item_taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortableCraftingTableSlotChanged",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_slot_changed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1302,9 +1403,10 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
+      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.quarz_axe": "Quarz Axe",
