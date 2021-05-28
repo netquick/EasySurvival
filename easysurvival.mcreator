@@ -1261,15 +1261,6 @@
       }
     },
     {
-      "name": "EasyFridge",
-      "type": "block",
-      "sortid": 98,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_fridge"
-    },
-    {
       "name": "QuarzBlock",
       "type": "recipe",
       "sortid": 99,
@@ -1295,6 +1286,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "elytra"
+    },
+    {
+      "name": "EasyFridgeGUI",
+      "type": "gui",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_gui"
+    },
+    {
+      "name": "EasyFridgeUpdateTick",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyFridge",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge"
     }
   ],
   "variable_elements": [],
@@ -1302,8 +1340,8 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
