@@ -1,5 +1,5 @@
 {
-  "parent": "easysurvival:custom/fridge",
+  "parent": "easysurvival:custom/fridge_oriented",
   "textures": {
     "all": "easysurvival:blocks/fridgefront",
     "particle": "easysurvival:blocks/fridgefront",

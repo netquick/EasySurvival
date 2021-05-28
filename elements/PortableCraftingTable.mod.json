@@ -28,9 +28,6 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 10,
-    "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "PlaceCraftingTable"
-    }
+    "inventoryStackSize": 64
   }
 }
