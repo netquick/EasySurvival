@@ -1,6 +1,27 @@
 
 package ch.netquick.easysurvival.item;
 
+<<<<<<< HEAD
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import ch.netquick.easysurvival.procedures.PlaceCraftingTableProcedure;
+import ch.netquick.easysurvival.EasysurvivalModElements;
+
+=======
+>>>>>>> branch 'master' of https://github.com/netquick/EasySurvival
 @EasysurvivalModElements.ModElement.Tag
 public class PortableCraftingTableItem extends EasysurvivalModElements.ModElement {
 
@@ -9,6 +30,8 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 
 	public PortableCraftingTableItem(EasysurvivalModElements instance) {
 		super(instance, 102);
+<<<<<<< HEAD
+=======
 
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -21,6 +44,7 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 				Minecraft.getInstance().player.closeScreen();
 			}
 		}
+>>>>>>> branch 'master' of https://github.com/netquick/EasySurvival
 	}
 
 	@Override
@@ -31,7 +55,7 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 	public static class ItemCustom extends Item {
 
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("portable_crafting_table");
 		}
 
@@ -57,6 +81,8 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+<<<<<<< HEAD
+=======
 
 			if (entity instanceof ServerPlayerEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
@@ -80,19 +106,23 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 				});
 			}
 
+>>>>>>> branch 'master' of https://github.com/netquick/EasySurvival
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+<<<<<<< HEAD
+				PlaceCraftingTableProcedure.executeProcedure($_dependencies);
+=======
 
 				PortableCraftingTableRightClickedInAirProcedure.executeProcedure($_dependencies);
+>>>>>>> branch 'master' of https://github.com/netquick/EasySurvival
 			}
 			return ar;
 		}
+<<<<<<< HEAD
+=======
 
 		@Override
 		public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundNBT compound) {
@@ -157,6 +187,7 @@ public class PortableCraftingTableItem extends EasysurvivalModElements.ModElemen
 			return inventory.orElseThrow(RuntimeException::new);
 		}
 
+>>>>>>> branch 'master' of https://github.com/netquick/EasySurvival
 	}
 
 }

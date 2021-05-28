@@ -26,11 +26,11 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "PortableCraftingTableGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 10,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "PortableCraftingTableRightClickedInAir"
+      "name": "PlaceCraftingTable"
     }
   }
 }

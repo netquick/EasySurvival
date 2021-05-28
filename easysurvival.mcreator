@@ -1297,93 +1297,31 @@
       "registry_name": "elytra"
     },
     {
-      "name": "EasyFridgeGUI",
-      "type": "gui",
-      "sortid": 102,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_fridge_gui"
-    },
-    {
-      "name": "EasyFridgeUpdateTick",
-      "type": "procedure",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_fridge_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PortableCraftingTableRightClickedInAir",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "portable_crafting_table_right_clicked_in_air",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PortableCraftingTable",
       "type": "item",
       "sortid": 102,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "portable_crafting_table"
     },
     {
-      "name": "PortableCraftingTableSlotChanged",
-      "type": "procedure",
-      "sortid": 106,
+      "name": "Planks",
+      "type": "tag",
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "portable_crafting_table_slot_changed",
+      "registry_name": "planks"
+    },
+    {
+      "name": "PlaceCraftingTable",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "place_crafting_table",
       "metadata": {
         "dependencies": [
           {
@@ -1396,44 +1334,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "PortableCraftingTableItemTaken",
-      "type": "procedure",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "portable_crafting_table_item_taken",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PortableCraftingTableGUI",
-      "type": "gui",
-      "sortid": 103,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "portable_crafting_table_gui"
     }
   ],
   "variable_elements": [],
