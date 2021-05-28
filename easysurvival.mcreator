@@ -1263,7 +1263,7 @@
     {
       "name": "EasyFridge",
       "type": "block",
-      "sortid": 98,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
