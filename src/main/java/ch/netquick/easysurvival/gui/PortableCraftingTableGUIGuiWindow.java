@@ -4,13 +4,13 @@ package ch.netquick.easysurvival.gui;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
 @OnlyIn(Dist.CLIENT)
-public class EasyFridgeGUIGuiWindow extends ContainerScreen<EasyFridgeGUIGui.GuiContainerMod> {
+public class PortableCraftingTableGUIGuiWindow extends ContainerScreen<PortableCraftingTableGUIGui.GuiContainerMod> {
 
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
 
-	public EasyFridgeGUIGuiWindow(EasyFridgeGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	public PortableCraftingTableGUIGuiWindow(PortableCraftingTableGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -21,7 +21,7 @@ public class EasyFridgeGUIGuiWindow extends ContainerScreen<EasyFridgeGUIGui.Gui
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("easysurvival:textures/easy_fridge_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("easysurvival:textures/portable_crafting_table_gui.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -62,7 +62,7 @@ public class EasyFridgeGUIGuiWindow extends ContainerScreen<EasyFridgeGUIGui.Gui
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "EasyFridge", 60, 11, -12829636);
+		this.font.drawString(ms, "Portable Crafting Table", 6, 6, -12829636);
 	}
 
 	@Override

@@ -1261,6 +1261,15 @@
       }
     },
     {
+      "name": "EasyFridge",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge"
+    },
+    {
       "name": "QuarzBlock",
       "type": "recipe",
       "sortid": 99,
@@ -1326,13 +1335,105 @@
       }
     },
     {
-      "name": "EasyFridge",
-      "type": "block",
+      "name": "PortableCraftingTableRightClickedInAir",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortableCraftingTable",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table"
+    },
+    {
+      "name": "PortableCraftingTableSlotChanged",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_slot_changed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortableCraftingTableItemTaken",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portable_crafting_table_item_taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortableCraftingTableGUI",
+      "type": "gui",
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_fridge"
+      "registry_name": "portable_crafting_table_gui"
     }
   ],
   "variable_elements": [],
