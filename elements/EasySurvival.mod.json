@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Easy Survival",
+    "icon": {
+      "value": "Blocks.SAPLING#3"
+    },
+    "showSearch": true
+  }
+}

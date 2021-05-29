@@ -1334,6 +1334,183 @@
           }
         ]
       }
+    },
+    {
+      "name": "EasyFridgeRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_recipe"
+    },
+    {
+      "name": "TagHelmet",
+      "type": "tag",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_helmet"
+    },
+    {
+      "name": "EasySmelter",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter"
+    },
+    {
+      "name": "EasySaw",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw"
+    },
+    {
+      "name": "EasySmelterGUI",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_gui"
+    },
+    {
+      "name": "EasySmelterUpdateTick",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySawGUI",
+      "type": "gui",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_gui"
+    },
+    {
+      "name": "EasyFridgeUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySawUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyFridgeGUI",
+      "type": "gui",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_gui"
+    },
+    {
+      "name": "EasySurvival",
+      "type": "tab",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_survival"
+    },
+    {
+      "name": "EasySawRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_recipe"
+    },
+    {
+      "name": "EasySmelterRecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_recipe"
     }
   ],
   "variable_elements": [],
@@ -1343,6 +1520,7 @@
       "gamerule.spawnersActive": "Spawners active",
       "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "itemGroup.tabeasy_survival": "Easy Survival",
       "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
@@ -1350,6 +1528,7 @@
       "item.easysurvival.quarz_axe": "Quarz Axe",
       "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.basalt_sword": "Basalt Sword",
+      "block.easysurvival.easy_smelter": "Easy Smelter",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
       "block.easysurvival.crop": "Crop",
       "block.easysurvival.easy_forge": "Easy Forge",
@@ -1367,6 +1546,7 @@
       "item.easysurvival.nether_stick": "Nether Stick",
       "block.easysurvival.spawner_blaze": "Spawner Blaze",
       "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
+      "block.easysurvival.easy_saw": "Easy Saw",
       "item.easysurvival.netherrack_axe": "Netherrack Axe",
       "block.easysurvival.easy_fridge": "Easy Fridge",
       "item.easysurvival.quarz_shovel": "Quarz Shovel",
