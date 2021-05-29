@@ -3,6 +3,17 @@ This mod is designed to make life a bit easier when playing in survival mode. As
 a nice base and to handle things an easy way. Things we repeatedly ran into we tried to cover with miscelaneous functions in this mod. Feel free to use is for your own
 minecraft experience.
 
+Blocks:
+- CropPlot: Wheat, Melon, Pumpkin, Beetroot, Carrot, Potato
+- TreePlot: all Saplings, Sugar Cane, Cactus, Bamboo, Chorus Fruit
+- EasyFridge: Converts Water to Ice Blocks and Ice Blocks to Snowballs
+- EasyForge: Smelts and cooks almost everything
+- EasyEnchantmentTable
+- EasyTeleporter
+- EasySaw
+- EasySmelter: Smelts Gold Nuggets (9) to Gold Ingots
+- EasyAnvil: Repairs everything for Iron Ingots
+- 
 
 Features:
 - CropPlot - put in a seed and it grows your plants. Works for Wheat, Melon, Pumpkin, Beetroot, Carrot and Potato
