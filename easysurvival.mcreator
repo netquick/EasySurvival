@@ -1077,35 +1077,6 @@
       "registry_name": "easy_anvil_gui"
     },
     {
-      "name": "EasyAnvilButtonClick",
-      "type": "procedure",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_anvil_button_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "EasyAnvilRecipe",
       "type": "recipe",
       "sortid": 87,
@@ -1511,6 +1482,69 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_smelter_recipe"
+    },
+    {
+      "name": "EasyAnvilItemTaken",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_item_taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyAnvilUpdateTick",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyAnvilItemReset",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_item_reset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1518,11 +1552,11 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
       "itemGroup.tabeasy_survival": "Easy Survival",
-      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
+      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.quarz_axe": "Quarz Axe",
