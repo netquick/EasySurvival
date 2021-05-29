@@ -26,3 +26,7 @@ Upcoming features:
 - Dedicated Storage
 - EasyFridge
 
+
+Downlaod actual .jar
+https://github.com/netquick/EasySurvival/blob/master/EasySurvival.jar
+
