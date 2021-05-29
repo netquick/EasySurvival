@@ -23,8 +23,11 @@ Features:
 
 
 Upcoming features:
-- Dedicated Storage
 - EasyFridge
+
+- Gold Smelter (nuggets to bars)
+- Wood Cutter (Log to Planks)
+
 
 
 Downlaod actual .jar
