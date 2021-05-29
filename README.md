@@ -24,7 +24,7 @@ Nether Recipes - you can now build common tools and items with stuff from nether
 - Enderpearls can be crafted by cheaper mats
 - Elytra is now craftable
 
-Spawners: Can be activated or deactivated by gamerule spawnerActive true/false
+Craftable Spawners: Spawning can be activated or deactivated by "gamerule spawnerActive true/false"
 - Ghast
 - Blaze
 - Slime
