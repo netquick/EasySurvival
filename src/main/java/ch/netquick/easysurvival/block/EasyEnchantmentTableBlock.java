@@ -333,8 +333,6 @@ public class EasyEnchantmentTableBlock extends EasysurvivalModElements.ModElemen
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 0)
-				return false;
 			if (index == 1)
 				return false;
 			if (index == 2)

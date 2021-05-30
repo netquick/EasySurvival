@@ -327,8 +327,6 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 0)
-				return false;
 			if (index == 2)
 				return false;
 			return true;

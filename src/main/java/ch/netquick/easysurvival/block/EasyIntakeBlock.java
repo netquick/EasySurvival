@@ -324,60 +324,6 @@ public class EasyIntakeBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
-			if (index == 0)
-				return false;
-			if (index == 1)
-				return false;
-			if (index == 2)
-				return false;
-			if (index == 3)
-				return false;
-			if (index == 4)
-				return false;
-			if (index == 5)
-				return false;
-			if (index == 6)
-				return false;
-			if (index == 7)
-				return false;
-			if (index == 8)
-				return false;
-			if (index == 9)
-				return false;
-			if (index == 10)
-				return false;
-			if (index == 11)
-				return false;
-			if (index == 12)
-				return false;
-			if (index == 13)
-				return false;
-			if (index == 14)
-				return false;
-			if (index == 15)
-				return false;
-			if (index == 16)
-				return false;
-			if (index == 17)
-				return false;
-			if (index == 18)
-				return false;
-			if (index == 19)
-				return false;
-			if (index == 20)
-				return false;
-			if (index == 21)
-				return false;
-			if (index == 22)
-				return false;
-			if (index == 23)
-				return false;
-			if (index == 24)
-				return false;
-			if (index == 25)
-				return false;
-			if (index == 26)
-				return false;
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());

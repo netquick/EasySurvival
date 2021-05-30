@@ -1612,11 +1612,11 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
       "itemGroup.tabeasy_survival": "Easy Survival",
-      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
+      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.quarz_axe": "Quarz Axe",
