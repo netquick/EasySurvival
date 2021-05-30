@@ -12,11 +12,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
@@ -40,7 +38,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -56,14 +53,13 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -71,30 +67,32 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-import ch.netquick.easysurvival.procedures.EasyAnvilUpdateTickProcedure;
-import ch.netquick.easysurvival.gui.EasyAnvilGUIGui;
+import ch.netquick.easysurvival.procedures.EasyIntakeOnBlockRightClickedProcedure;
+import ch.netquick.easysurvival.itemgroup.EasySurvivalItemGroup;
+import ch.netquick.easysurvival.gui.EasyIntakeGUIGui;
 import ch.netquick.easysurvival.EasysurvivalModElements;
 
 @EasysurvivalModElements.ModElement.Tag
-public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
-	@ObjectHolder("easysurvival:easy_anvil")
+public class EasyIntakeBlock extends EasysurvivalModElements.ModElement {
+	@ObjectHolder("easysurvival:easy_intake")
 	public static final Block block = null;
-	@ObjectHolder("easysurvival:easy_anvil")
+	@ObjectHolder("easysurvival:easy_intake")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public EasyAnvilBlock(EasysurvivalModElements instance) {
-		super(instance, 83);
+	public EasyIntakeBlock(EasysurvivalModElements instance) {
+		super(instance, 125);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(EasySurvivalItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("easy_anvil"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("easy_intake"));
 		}
 	}
 	@Override
@@ -103,12 +101,12 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ANVIL).sound(SoundType.ANVIL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("easy_anvil");
+			setRegistryName("easy_intake");
 		}
 
 		@Override
@@ -132,7 +130,7 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			;
-			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
 		}
 
 		@Override
@@ -141,32 +139,6 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
-		}
-
-		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EasyAnvilUpdateTickProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
 		}
 
 		@Override
@@ -180,15 +152,25 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Easy Anvil");
+						return new StringTextComponent("Easy Intake");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new EasyAnvilGUIGui.GuiContainerMod(id, inventory,
+						return new EasyIntakeGUIGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
+			}
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				EasyIntakeOnBlockRightClickedProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}
@@ -244,7 +226,7 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(27, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -297,7 +279,7 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("easy_anvil");
+			return new StringTextComponent("easy_intake");
 		}
 
 		@Override
@@ -307,12 +289,12 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new EasyAnvilGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new EasyIntakeGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Easy Anvil");
+			return new StringTextComponent("Easy Intake");
 		}
 
 		@Override
@@ -327,10 +309,6 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 0)
-				return false;
-			if (index == 2)
-				return false;
 			return true;
 		}
 
@@ -346,6 +324,60 @@ public class EasyAnvilBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
+			if (index == 0)
+				return false;
+			if (index == 1)
+				return false;
+			if (index == 2)
+				return false;
+			if (index == 3)
+				return false;
+			if (index == 4)
+				return false;
+			if (index == 5)
+				return false;
+			if (index == 6)
+				return false;
+			if (index == 7)
+				return false;
+			if (index == 8)
+				return false;
+			if (index == 9)
+				return false;
+			if (index == 10)
+				return false;
+			if (index == 11)
+				return false;
+			if (index == 12)
+				return false;
+			if (index == 13)
+				return false;
+			if (index == 14)
+				return false;
+			if (index == 15)
+				return false;
+			if (index == 16)
+				return false;
+			if (index == 17)
+				return false;
+			if (index == 18)
+				return false;
+			if (index == 19)
+				return false;
+			if (index == 20)
+				return false;
+			if (index == 21)
+				return false;
+			if (index == 22)
+				return false;
+			if (index == 23)
+				return false;
+			if (index == 24)
+				return false;
+			if (index == 25)
+				return false;
+			if (index == 26)
+				return false;
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());

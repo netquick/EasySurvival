@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "barrel": "barrel",
+        "barreltop": "barreltop",
+        "wood": "wood"
+      },
+      "name": "default"
+    }
+  }
+}

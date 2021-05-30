@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "easysurvival:block/easy_intake"
+    },
+    "facing=east": {
+      "model": "easysurvival:block/easy_intake",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "easysurvival:block/easy_intake",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "easysurvival:block/easy_intake",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "easysurvival:block/easy_intake",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "easysurvival:block/easy_intake",
+      "x": 90
+    }
+  }
+}

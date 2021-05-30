@@ -1545,6 +1545,66 @@
           }
         ]
       }
+    },
+    {
+      "name": "EasyIntakeGUI",
+      "type": "gui",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake_gui"
+    },
+    {
+      "name": "EasyIntake",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake"
+    },
+    {
+      "name": "EasyIntakeOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TagIntake",
+      "type": "tag",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_intake"
     }
   ],
   "variable_elements": [],
@@ -1552,11 +1612,11 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
       "itemGroup.tabeasy_survival": "Easy Survival",
-      "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
+      "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.quarz_axe": "Quarz Axe",
@@ -1571,6 +1631,7 @@
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
       "item.easysurvival.quarz_hoe": "Quarz Hoe",
+      "block.easysurvival.easy_intake": "Easy Intake",
       "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
       "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
       "block.easysurvival.spawner_ghast": "Spawner Ghast",
