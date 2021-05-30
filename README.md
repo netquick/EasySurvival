@@ -1,5 +1,5 @@
 # EasySurvival
-This mod is designed to make life a bit easier when playing in survival mode. As we play survival with the goal to soon kill ender dragon we still wan't to be able to build
+This mod is designed to make life a bit easier when playing in survival mode. As we play survival with the goal to soon kill ender dragon and move forward we still wan't to be able to build
 a nice base and to handle things an easy way. Things we repeatedly ran into we tried to cover with miscelaneous functions in this mod. Feel free to use is for your own
 minecraft experience.
 
