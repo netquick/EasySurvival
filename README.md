@@ -14,18 +14,17 @@ Blocks:
 - EasySmelter: Smelts Gold Nuggets (9) to Gold Ingots
 - EasyAnvil: Repairs everything for Iron Ingots
 
-- Nether Recipes - you can now build common tools and items with stuff from nether:
-   - Nether Sticks can be used as replacement for wooden sticks on Nether Tools and are crafted with Netherrack
-   - Netherrack lets you craft tools and armor with stats of wood/leather
-   - Basalt gives items equal to stone
-   - Netherquarz is equivalent to iron and lets you craft iron ingots from it
-   - Bucket, Ladder, Workbench, Forge can be crafted from Netherrack instead of Wood
-   - Simple recipe for Shulker Box (2 Hoppers and 1 Chest) to avoid having to drop loads of blocks while exploring
-   - Enderpearls can be crafted by cheaper mats
-   - Elytra is now craftable
-   - 
+Nether Recipes - you can now build common tools and items with stuff from nether:
+- Nether Sticks can be used as replacement for wooden sticks on Nether Tools and are crafted with Netherrack
+- Netherrack lets you craft tools and armor with stats of wood/leather
+- Basalt gives items equal to stone
+- Netherquarz is equivalent to iron and lets you craft iron ingots from it
+- Bucket, Ladder, Workbench, Forge can be crafted from Netherrack instead of Wood
+- Simple recipe for Shulker Box (2 Hoppers and 1 Chest) to avoid having to drop loads of blocks while exploring
+- Enderpearls can be crafted by cheaper mats
+- Elytra is now craftable
 
-Spawners: Can be activated or deactivated by gamerule spawnerActive true/false
+Craftable Spawners: Spawning can be activated or deactivated by "gamerule spawnerActive true/false"
 - Ghast
 - Blaze
 - Slime
