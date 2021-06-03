@@ -1444,7 +1444,7 @@
       "name": "SpawnerEvoker",
       "type": "block",
       "sortid": 117,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "spawner_evoker"
@@ -1498,7 +1498,7 @@
       "name": "EasyFridgeGUI",
       "type": "gui",
       "sortid": 118,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_fridge_gui"
@@ -1771,7 +1771,7 @@
       "name": "EasyCrafterGUI",
       "type": "gui",
       "sortid": 130,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_crafter_gui"
