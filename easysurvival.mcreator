@@ -1605,6 +1605,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tag_intake"
+    },
+    {
+      "name": "EasyForgeAuto",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_auto"
+    },
+    {
+      "name": "EasyForgeAutoRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_auto_recipe"
+    },
+    {
+      "name": "EasyCrafterGUI",
+      "type": "gui",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_crafter_gui"
     }
   ],
   "variable_elements": [],
@@ -1627,6 +1654,7 @@
       "block.easysurvival.crop": "Crop",
       "block.easysurvival.easy_forge": "Easy Forge",
       "gamerule.spawnersActive.description": "Sets if custom spawners are active or inactive",
+      "block.easysurvival.easy_forge_auto": "Easy Forge",
       "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",

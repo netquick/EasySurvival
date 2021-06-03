@@ -163,5 +163,7 @@ public class EasyIntakeOnBlockRightClickedProcedure extends EasysurvivalModEleme
 			}
 			slotno = (double) ((slotno) + 1);
 		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).closeScreen();
 	}
 }
