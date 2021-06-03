@@ -1,0 +1,90 @@
+{
+	"__comment": "Designed by Netquick with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "blocks/particle",
+		"sawblock": "blocks/sawblock",
+		"sawblade": "plate",
+		"sawblockside": "blocks/sawblockside"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 8, 11, 2 ],
+			"to": [ 8.5, 11.5, 14 ],
+			"rotation": { "origin": [ 8, 11, 2 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 0, 4, 0.5, 16 ], "texture": "#sawblade" },
+				"up": { "uv": [ 0, 0, 0.5, 12 ], "texture": "#sawblade" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#sawblade" },
+				"south": { "uv": [ 0, 15, 0.5, 16 ], "texture": "#sawblade" },
+				"west": { "uv": [ 0, 15, 12, 16 ], "texture": "#sawblade" },
+				"east": { "uv": [ 4, 15, 16, 16 ], "texture": "#sawblade" }
+			}
+		},
+		{
+			"__comment": "Box1",
+			"from": [ 8, 11.5, 2.5 ],
+			"to": [ 8.5, 12, 13.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 4, 0.5, 16 ], "texture": "#sawblade" },
+				"up": { "uv": [ 0, 0, 0.5, 12 ], "texture": "#sawblade" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#sawblade" },
+				"south": { "uv": [ 0, 15, 0.5, 16 ], "texture": "#sawblade" },
+				"west": { "uv": [ 0, 15, 12, 16 ], "texture": "#sawblade" },
+				"east": { "uv": [ 4, 15, 16, 16 ], "texture": "#sawblade" }
+			}
+		},
+		{
+			"__comment": "Box1",
+			"from": [ 8, 12, 3.5 ],
+			"to": [ 8.5, 12.5, 12.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 4, 0.5, 16 ], "texture": "#sawblade" },
+				"up": { "uv": [ 0, 0, 0.5, 12 ], "texture": "#sawblade" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#sawblade" },
+				"south": { "uv": [ 0, 15, 0.5, 16 ], "texture": "#sawblade" },
+				"west": { "uv": [ 0, 15, 12, 16 ], "texture": "#sawblade" },
+				"east": { "uv": [ 4, 15, 16, 16 ], "texture": "#sawblade" }
+			}
+		},
+		{
+			"__comment": "Box1",
+			"from": [ 8, 12.5, 5 ],
+			"to": [ 8.5, 13, 11 ],
+			"faces": {
+				"down": { "uv": [ 0, 4, 0.5, 16 ], "texture": "#sawblade" },
+				"up": { "uv": [ 0, 0, 0.5, 12 ], "texture": "#sawblade" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#sawblade" },
+				"south": { "uv": [ 0, 15, 0.5, 16 ], "texture": "#sawblade" },
+				"west": { "uv": [ 0, 15, 12, 16 ], "texture": "#sawblade" },
+				"east": { "uv": [ 4, 15, 16, 16 ], "texture": "#sawblade" }
+			}
+		},
+		{
+			"__comment": "Box1",
+			"from": [ 8, 13, 6.5 ],
+			"to": [ 8.5, 13.5, 9.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 4, 0.5, 16 ], "texture": "#sawblade" },
+				"up": { "uv": [ 0, 0, 0.5, 12 ], "texture": "#sawblade" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#sawblade" },
+				"south": { "uv": [ 0, 15, 0.5, 16 ], "texture": "#sawblade" },
+				"west": { "uv": [ 0, 15, 12, 16 ], "texture": "#sawblade" },
+				"east": { "uv": [ 4, 15, 16, 16 ], "texture": "#sawblade" }
+			}
+		},
+		{
+			"__comment": "Box7",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 11, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#sawblock" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#sawblock" },
+				"north": { "uv": [ 0, 5, 16, 16 ], "texture": "#sawblockside" },
+				"south": { "uv": [ 0, 5, 16, 16 ], "texture": "#sawblockside" },
+				"west": { "uv": [ 0, 5, 16, 16 ], "texture": "#sawblockside" },
+				"east": { "uv": [ 0, 5, 16, 16 ], "texture": "#sawblockside" }
+			}
+		}
+	]
+}

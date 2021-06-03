@@ -380,5 +380,60 @@ public class CropUpdateTickProcedure extends EasysurvivalModElements.ModElement 
 				Slotno = (double) ((Slotno) + 1);
 			}
 		}
+		if (((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null) {
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+				}
+				return _retval.get();
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.CHORUS_FRUIT, (int) (1)).getItem())) {
+			Slotno = (double) 1;
+			for (int index6 = 0; index6 < (int) (7); index6++) {
+				if (((new Object() {
+					public int getAmount(IWorld world, BlockPos pos, int sltid) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						TileEntity _ent = world.getTileEntity(pos);
+						if (_ent != null) {
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_retval.set(capability.getStackInSlot(sltid).getCount());
+							});
+						}
+						return _retval.get();
+					}
+				}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) ((Slotno)))) < 64)) {
+					{
+						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _sltid = (int) ((Slotno));
+							final ItemStack _setstack = new ItemStack(Items.POPPED_CHORUS_FRUIT, (int) (1));
+							_setstack.setCount((int) ((new Object() {
+								public int getAmount(IWorld world, BlockPos pos, int sltid) {
+									AtomicInteger _retval = new AtomicInteger(0);
+									TileEntity _ent = world.getTileEntity(pos);
+									if (_ent != null) {
+										_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+											_retval.set(capability.getStackInSlot(sltid).getCount());
+										});
+									}
+									return _retval.get();
+								}
+							}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) ((Slotno)))) + 1));
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+								}
+							});
+						}
+					}
+					break;
+				}
+				Slotno = (double) ((Slotno) + 1);
+			}
+		}
 	}
 }

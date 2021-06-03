@@ -285,7 +285,7 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
-								final int _sltid = (int) (7);
+								final int _sltid = (int) (8);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -401,6 +401,34 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (4);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.MENDING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.MENDING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (5);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -709,6 +737,65 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
 					}
 				}
+				if ((ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:tag_helmet").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((tool).getItem()))) {
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.RESPIRATION, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.RESPIRATION, (int) 3);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (8);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.AQUA_AFFINITY, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.AQUA_AFFINITY, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (9);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+				}
 				if ((ItemTags.getCollection().getTagByID(new ResourceLocation(("forge:tag_boots").toLowerCase(java.util.Locale.ENGLISH)))
 						.contains((tool).getItem()))) {
 					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.SOUL_SPEED, (tool))) == 0)) {
@@ -717,6 +804,34 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (8);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.FROST_WALKER, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.FROST_WALKER, (int) 2);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (9);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -748,6 +863,176 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (9);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+				}
+				if (((tool).getItem() == new ItemStack(Items.TRIDENT, (int) (1)).getItem())) {
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.UNBREAKING, (int) 3);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (1);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.MENDING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.MENDING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (2);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LOYALTY, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.LOYALTY, (int) 3);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (3);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.IMPALING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.IMPALING, (int) 5);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (4);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.CHANNELING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.CHANNELING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (5);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.RIPTIDE, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.RIPTIDE, (int) 3);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (6);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -912,10 +1197,38 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							}
 						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
 					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.MENDING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.MENDING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (6);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
 				}
 				if (((tool).getItem() == new ItemStack(Items.FISHING_ROD, (int) (1)).getItem())) {
 					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.LUCK_OF_THE_SEA, (tool))) == 0)) {
-						((tool)).addEnchantment(Enchantments.LUCK_OF_THE_SEA, (int) 3);
+						((tool)).addEnchantment(Enchantments.PROTECTION, (int) 3);
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
@@ -976,6 +1289,34 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (3);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.MENDING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.MENDING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (4);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -1090,6 +1431,34 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (4);
+								final ItemStack _setstack = (tool);
+								_setstack.setCount((int) 1);
+								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+									}
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).copy());
+									});
+								}
+								return _retval.get();
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)));
+					}
+					if (((EnchantmentHelper.getEnchantmentLevel(Enchantments.MENDING, (tool))) == 0)) {
+						((tool)).addEnchantment(Enchantments.MENDING, (int) 1);
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (_ent != null) {
+								final int _sltid = (int) (5);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {

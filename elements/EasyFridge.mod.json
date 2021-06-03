@@ -85,7 +85,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "EasyFridgeGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 2,
     "inventoryStackSize": 64,
@@ -105,6 +105,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "EasyFridgeUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

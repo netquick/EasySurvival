@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "pottexture": "pottexture",
+        "metal": "metal",
+        "smeltblock": "smeltblock"
+      },
+      "name": "default"
+    }
+  }
+}

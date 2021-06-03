@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "sawblade": "sawblade",
+        "sawblock": "sawblock",
+        "sawblockside": "sawblockside"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -19,6 +19,12 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyAnvilItemReset"
+          },
+          "onStackTransfer": {
+            "name": "EasyAnvilItemReset"
+          },
           "name": "Slot #0",
           "x": 132,
           "y": 84
@@ -38,25 +44,17 @@
         }
       },
       {
-        "type": "button",
-        "data": {
-          "text": "Repair",
-          "onClick": {
-            "name": "EasyAnvilButtonClick"
-          },
-          "width": 55,
-          "height": 20,
-          "name": "Repair",
-          "x": 240,
-          "y": 48
-        }
-      },
-      {
         "type": "outputslot",
         "data": {
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyAnvilItemTaken"
+          },
+          "onStackTransfer": {
+            "name": "EasyAnvilItemTaken"
+          },
           "name": "Slot #2",
           "x": 276,
           "y": 84
@@ -71,6 +69,12 @@
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EasyAnvilItemReset"
+          },
+          "onStackTransfer": {
+            "name": "EasyAnvilItemReset"
+          },
           "name": "Slot #1",
           "x": 150,
           "y": 84

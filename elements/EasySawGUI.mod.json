@@ -1,0 +1,80 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 150,
+          "y": 84
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 204,
+          "y": 66
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 258,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "EasySaw",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "EasySaw",
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Template",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Template",
+          "x": 193,
+          "y": 84
+        }
+      }
+    ]
+  }
+}

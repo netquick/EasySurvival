@@ -1,0 +1,35 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.IRON_HELMET"
+      },
+      {
+        "value": "Items.CHAINMAIL_HELMET"
+      },
+      {
+        "value": "Items.LEATHER_HELMET"
+      },
+      {
+        "value": "Items.TURTLE_HELMET"
+      },
+      {
+        "value": "Items.GOLDEN_HELMET"
+      },
+      {
+        "value": "Items.DIAMOND_HELMET"
+      },
+      {
+        "value": "Items.NETHERITE_HELMET"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "tag_helmet",
+    "namespace": "forge"
+  }
+}

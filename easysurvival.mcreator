@@ -1077,35 +1077,6 @@
       "registry_name": "easy_anvil_gui"
     },
     {
-      "name": "EasyAnvilButtonClick",
-      "type": "procedure",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_anvil_button_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "EasyAnvilRecipe",
       "type": "recipe",
       "sortid": 87,
@@ -1336,42 +1307,13 @@
       }
     },
     {
-      "name": "SpawnerWitherSkelettUpdateTick",
-      "type": "procedure",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spawner_wither_skelett_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SpawnerWitherSkelett",
+      "name": "SpawnerPillager",
       "type": "block",
-      "sortid": 112,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spawner_wither_skelett"
+      "registry_name": "spawner_pillager"
     },
     {
       "name": "SpawnerCreeper",
@@ -1412,13 +1354,33 @@
       }
     },
     {
-      "name": "SpawnerPillager",
-      "type": "block",
-      "sortid": 115,
+      "name": "SpawnerWitherSkelettUpdateTick",
+      "type": "procedure",
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spawner_pillager"
+      "registry_name": "spawner_wither_skelett_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     },
     {
       "name": "SpawnerPillagerUpdateTick",
@@ -1450,15 +1412,6 @@
       }
     },
     {
-      "name": "SpawnerEvoker",
-      "type": "block",
-      "sortid": 117,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spawner_evoker"
-    },
-    {
       "name": "SpawnerEvokerUpdateTick",
       "type": "procedure",
       "sortid": 118,
@@ -1488,6 +1441,15 @@
       }
     },
     {
+      "name": "SpawnerEvoker",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_evoker"
+    },
+    {
       "name": "Trident",
       "type": "recipe",
       "sortid": 119,
@@ -1495,6 +1457,342 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "trident"
+    },
+    {
+      "name": "SpawnerWitherSkelett",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_wither_skelett"
+    },
+    {
+      "name": "TagHelmet",
+      "type": "tag",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_helmet"
+    },
+    {
+      "name": "EasyIntake",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake"
+    },
+    {
+      "name": "EasySaw",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw"
+    },
+    {
+      "name": "EasyFridgeGUI",
+      "type": "gui",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_gui"
+    },
+    {
+      "name": "EasyAnvilItemTaken",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_item_taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyFridgeUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySmelterGUI",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_gui"
+    },
+    {
+      "name": "EasyIntakeGUI",
+      "type": "gui",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake_gui"
+    },
+    {
+      "name": "EasySawRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_recipe"
+    },
+    {
+      "name": "EasyIntakeOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyForgeAuto",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_auto"
+    },
+    {
+      "name": "EasySmelterUpdateTick",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyAnvilUpdateTick",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySurvival",
+      "type": "tab",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_survival"
+    },
+    {
+      "name": "EasySmelter",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter"
+    },
+    {
+      "name": "EasyAnvilItemReset",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_anvil_item_reset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasySawUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyFridgeRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_fridge_recipe"
+    },
+    {
+      "name": "EasySawGUI",
+      "type": "gui",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_saw_gui"
+    },
+    {
+      "name": "TagIntake",
+      "type": "tag",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_intake"
+    },
+    {
+      "name": "EasyCrafterGUI",
+      "type": "gui",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_crafter_gui"
+    },
+    {
+      "name": "EasySmelterRecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_smelter_recipe"
+    },
+    {
+      "name": "EasyForgeAutoRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_forge_auto_recipe"
     }
   ],
   "variable_elements": [],
@@ -1502,19 +1800,18 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "block.easysurvival.spawner_creeper": "Spawner Creeper",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.tree_crop": "Tree Crop",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.spawner_creeper": "Spawner Creeper",
       "block.easysurvival.spawner_pillager": "Spawner Pillager",
-      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
+      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
       "item.easysurvival.quarz_axe": "Quarz Axe",
       "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.basalt_sword": "Basalt Sword",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
-      "block.easysurvival.spawner_wither_skelett": "Spawner Wither Skeleton",
       "block.easysurvival.crop": "Crop",
       "block.easysurvival.easy_forge": "Easy Forge",
       "gamerule.spawnersActive.description": "Sets if custom spawners are active or inactive",
@@ -1522,16 +1819,17 @@
       "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
       "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
       "item.easysurvival.quarz_hoe": "Quarz Hoe",
+      "block.easysurvival.easy_intake": "Easy Intake",
       "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
       "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
       "block.easysurvival.spawner_ghast": "Spawner Ghast",
       "item.easysurvival.basalt_shovel": "Basalt Shovel",
       "item.easysurvival.netherrack_sword": "Netherrack Sword",
       "item.easysurvival.basalt_hoe": "Basalt Hoe",
-      "block.easysurvival.spawner_evoker": "Spawner Evoker",
       "item.easysurvival.nether_stick": "Nether Stick",
       "block.easysurvival.spawner_blaze": "Spawner Blaze",
       "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
+      "block.easysurvival.easy_saw": "Easy Saw",
       "item.easysurvival.netherrack_axe": "Netherrack Axe",
       "block.easysurvival.easy_fridge": "Easy Fridge",
       "item.easysurvival.quarz_shovel": "Quarz Shovel",

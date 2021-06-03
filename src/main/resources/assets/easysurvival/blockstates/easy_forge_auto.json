@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "easysurvival:block/easy_forge_auto"
+    },
+    "facing=east": {
+      "model": "easysurvival:block/easy_forge_auto",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "easysurvival:block/easy_forge_auto",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "easysurvival:block/easy_forge_auto",
+      "y": 270
+    }
+  }
+}

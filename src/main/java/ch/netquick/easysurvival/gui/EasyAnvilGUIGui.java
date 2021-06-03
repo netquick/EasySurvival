@@ -33,7 +33,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import ch.netquick.easysurvival.procedures.EasyAnvilButtonClickProcedure;
+import ch.netquick.easysurvival.procedures.EasyAnvilItemTakenProcedure;
+import ch.netquick.easysurvival.procedures.EasyAnvilItemResetProcedure;
 import ch.netquick.easysurvival.EasysurvivalModElements;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
@@ -116,14 +117,52 @@ public class EasyAnvilGUIGui extends EasysurvivalModElements.ModElement {
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 48) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(0, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(0, 2, b.getCount() - a.getCount());
+				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 151, 48) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(2, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(2, 2, b.getCount() - a.getCount());
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 48) {
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(1, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(1, 2, b.getCount() - a.getCount());
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.IRON_INGOT, (int) (1)).getItem() == stack.getItem());
@@ -376,16 +415,6 @@ public class EasyAnvilGUIGui extends EasysurvivalModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EasyAnvilButtonClickProcedure.executeProcedure($_dependencies);
-			}
-		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {
@@ -393,5 +422,50 @@ public class EasyAnvilGUIGui extends EasysurvivalModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemResetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 0 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemResetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemTakenProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemTakenProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 1 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemResetProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 1 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EasyAnvilItemResetProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

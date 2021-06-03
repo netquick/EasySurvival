@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "anvil:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -91,7 +91,9 @@
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      2
+    ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -101,6 +103,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "EasyAnvilUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

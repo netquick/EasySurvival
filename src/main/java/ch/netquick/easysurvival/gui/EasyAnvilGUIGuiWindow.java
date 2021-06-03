@@ -5,19 +5,15 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
-
-import ch.netquick.easysurvival.EasysurvivalMod;
 
 @OnlyIn(Dist.CLIENT)
 public class EasyAnvilGUIGuiWindow extends ContainerScreen<EasyAnvilGUIGui.GuiContainerMod> {
@@ -84,11 +80,5 @@ public class EasyAnvilGUIGuiWindow extends ContainerScreen<EasyAnvilGUIGui.GuiCo
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 114, this.guiTop + 11, 55, 20, new StringTextComponent("Repair"), e -> {
-			if (true) {
-				EasysurvivalMod.PACKET_HANDLER.sendToServer(new EasyAnvilGUIGui.ButtonPressedMessage(0, x, y, z));
-				EasyAnvilGUIGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
 	}
 }

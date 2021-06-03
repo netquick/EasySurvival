@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "easysurvival:block/easy_smelter"
+    },
+    "facing=east": {
+      "model": "easysurvival:block/easy_smelter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "easysurvival:block/easy_smelter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "easysurvival:block/easy_smelter",
+      "y": 270
+    }
+  }
+}

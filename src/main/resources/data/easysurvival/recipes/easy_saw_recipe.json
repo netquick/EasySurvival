@@ -1,0 +1,36 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "tag": "minecraft:planks"
+    },
+    "4": {
+      "tag": "minecraft:planks"
+    },
+    "5": {
+      "tag": "minecraft:planks"
+    },
+    "6": {
+      "tag": "minecraft:planks"
+    },
+    "7": {
+      "tag": "minecraft:planks"
+    },
+    "8": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "easysurvival:easy_saw",
+    "count": 1
+  }
+}

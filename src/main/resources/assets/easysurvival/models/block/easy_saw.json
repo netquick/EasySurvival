@@ -1,0 +1,10 @@
+{
+  "parent": "easysurvival:custom/sawblock",
+  "textures": {
+    "all": "easysurvival:blocks/sawblock",
+    "particle": "easysurvival:blocks/sawblock",
+    "sawblade": "easysurvival:blocks/sawblade",
+    "sawblock": "easysurvival:blocks/sawblock",
+    "sawblockside": "easysurvival:blocks/sawblockside"
+  }
+}
