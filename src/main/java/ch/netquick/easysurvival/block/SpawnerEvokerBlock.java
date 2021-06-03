@@ -1,45 +1,17 @@
 
 package ch.netquick.easysurvival.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import java.util.Random;
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Collections;
-
-import ch.netquick.easysurvival.procedures.SpawnerEvokerUpdateTickProcedure;
-import ch.netquick.easysurvival.EasysurvivalModElements;
 
 @EasysurvivalModElements.ModElement.Tag
 public class SpawnerEvokerBlock extends EasysurvivalModElements.ModElement {
+
 	@ObjectHolder("easysurvival:spawner_evoker")
 	public static final Block block = null;
+
 	public SpawnerEvokerBlock(EasysurvivalModElements instance) {
 		super(instance, 117);
+
 	}
 
 	@Override
@@ -54,10 +26,13 @@ public class SpawnerEvokerBlock extends EasysurvivalModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
+
 			setRegistryName("spawner_evoker");
 		}
 
@@ -68,6 +43,7 @@ public class SpawnerEvokerBlock extends EasysurvivalModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
@@ -89,14 +65,18 @@ public class SpawnerEvokerBlock extends EasysurvivalModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+
 				SpawnerEvokerUpdateTickProcedure.executeProcedure($_dependencies);
 			}
+
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
 		}
 
@@ -120,5 +100,7 @@ public class SpawnerEvokerBlock extends EasysurvivalModElements.ModElement {
 					world.addParticle(ParticleTypes.SMOKE, d0, d1, d2, d3, d4, d5);
 				}
 		}
+
 	}
+
 }

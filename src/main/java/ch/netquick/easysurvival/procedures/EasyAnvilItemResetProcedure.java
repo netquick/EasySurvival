@@ -1,11 +1,20 @@
 package ch.netquick.easysurvival.procedures;
 
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.function.Supplier;
+import java.util.Map;
+
+import ch.netquick.easysurvival.EasysurvivalModElements;
+import ch.netquick.easysurvival.EasysurvivalMod;
+
 @EasysurvivalModElements.ModElement.Tag
 public class EasyAnvilItemResetProcedure extends EasysurvivalModElements.ModElement {
-
 	public EasyAnvilItemResetProcedure(EasysurvivalModElements instance) {
 		super(instance, 123);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -14,9 +23,7 @@ public class EasyAnvilItemResetProcedure extends EasysurvivalModElements.ModElem
 				EasysurvivalMod.LOGGER.warn("Failed to load dependency entity for procedure EasyAnvilItemReset!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		{
 			Entity _ent = entity;
 			if (_ent instanceof ServerPlayerEntity) {
@@ -30,7 +37,5 @@ public class EasyAnvilItemResetProcedure extends EasysurvivalModElements.ModElem
 				}
 			}
 		}
-
 	}
-
 }

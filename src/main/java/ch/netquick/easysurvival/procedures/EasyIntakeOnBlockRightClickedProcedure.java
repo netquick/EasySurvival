@@ -1,11 +1,39 @@
 package ch.netquick.easysurvival.procedures;
 
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkHooks;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
+
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.Map;
+
+import io.netty.buffer.Unpooled;
+
+import ch.netquick.easysurvival.gui.EasyIntakeGUIGui;
+import ch.netquick.easysurvival.EasysurvivalModElements;
+import ch.netquick.easysurvival.EasysurvivalMod;
+
 @EasysurvivalModElements.ModElement.Tag
 public class EasyIntakeOnBlockRightClickedProcedure extends EasysurvivalModElements.ModElement {
-
 	public EasyIntakeOnBlockRightClickedProcedure(EasysurvivalModElements instance) {
 		super(instance, 126);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -34,13 +62,11 @@ public class EasyIntakeOnBlockRightClickedProcedure extends EasysurvivalModEleme
 				EasysurvivalMod.LOGGER.warn("Failed to load dependency world for procedure EasyIntakeOnBlockRightClicked!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double slotno = 0;
 		double invslot = 0;
 		double freeslot = 0;
@@ -139,7 +165,5 @@ public class EasyIntakeOnBlockRightClickedProcedure extends EasysurvivalModEleme
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).closeScreen();
-
 	}
-
 }
