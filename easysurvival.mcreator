@@ -1793,6 +1793,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawner_wither_skelett"
+    },
+    {
+      "name": "EasyIntakeRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_intake_recipe"
     }
   ],
   "variable_elements": [],
