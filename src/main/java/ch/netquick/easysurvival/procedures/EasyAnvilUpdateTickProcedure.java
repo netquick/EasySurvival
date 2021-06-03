@@ -1,11 +1,24 @@
 package ch.netquick.easysurvival.procedures;
 
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.CapabilityItemHandler;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.item.ItemStack;
+
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
+
+import ch.netquick.easysurvival.EasysurvivalModElements;
+import ch.netquick.easysurvival.EasysurvivalMod;
+
 @EasysurvivalModElements.ModElement.Tag
 public class EasyAnvilUpdateTickProcedure extends EasysurvivalModElements.ModElement {
-
 	public EasyAnvilUpdateTickProcedure(EasysurvivalModElements instance) {
 		super(instance, 122);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -29,12 +42,10 @@ public class EasyAnvilUpdateTickProcedure extends EasysurvivalModElements.ModEle
 				EasysurvivalMod.LOGGER.warn("Failed to load dependency world for procedure EasyAnvilUpdateTick!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		ItemStack tempitem = ItemStack.EMPTY;
 		tempitem = (new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
@@ -77,7 +88,5 @@ public class EasyAnvilUpdateTickProcedure extends EasysurvivalModElements.ModEle
 				}
 			}
 		}
-
 	}
-
 }

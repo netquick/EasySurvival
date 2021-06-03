@@ -1771,7 +1771,7 @@
       "name": "SpawnerEvoker",
       "type": "block",
       "sortid": 117,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "spawner_evoker"
@@ -1800,9 +1800,10 @@
   "language_map": {
     "en_us": {
       "gamerule.spawnersActive": "Spawners active",
-      "block.easysurvival.tree_crop": "Tree Crop",
-      "item.easysurvival.quarz_sword": "Quarz Sword",
       "block.easysurvival.spawner_creeper": "Spawner Creeper",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
+      "itemGroup.tabeasy_survival": "Easy Survival",
       "block.easysurvival.spawner_pillager": "Spawner Pillager",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
@@ -1813,6 +1814,7 @@
       "item.easysurvival.basalt_sword": "Basalt Sword",
       "block.easysurvival.easy_smelter": "Easy Smelter",
       "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
+      "block.easysurvival.spawner_wither_skelett": "Spawner Wither Skeleton",
       "block.easysurvival.crop": "Crop",
       "block.easysurvival.easy_forge": "Easy Forge",
       "gamerule.spawnersActive.description": "Sets if custom spawners are active or inactive",
@@ -1828,6 +1830,7 @@
       "item.easysurvival.basalt_shovel": "Basalt Shovel",
       "item.easysurvival.netherrack_sword": "Netherrack Sword",
       "item.easysurvival.basalt_hoe": "Basalt Hoe",
+      "block.easysurvival.spawner_evoker": "Spawner Evoker",
       "item.easysurvival.nether_stick": "Nether Stick",
       "block.easysurvival.spawner_blaze": "Spawner Blaze",
       "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
