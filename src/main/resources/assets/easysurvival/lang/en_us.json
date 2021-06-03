@@ -1,8 +1,9 @@
 {
   "gamerule.spawnersActive": "Spawners active",
-  "block.easysurvival.tree_crop": "Tree Crop",
+  "block.easysurvival.spawner_creeper": "Spawner Creeper",
   "item.easysurvival.quarz_sword": "Quarz Sword",
-  "itemGroup.tabeasy_survival": "Easy Survival",
+  "block.easysurvival.tree_crop": "Tree Crop",
+  "block.easysurvival.spawner_pillager": "Spawner Pillager",
   "block.easysurvival.teleporter_plate": "Teleporter Plate",
   "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
   "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",

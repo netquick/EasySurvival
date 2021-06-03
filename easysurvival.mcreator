@@ -1632,6 +1632,167 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_crafter_gui"
+    },
+    {
+      "name": "SpawnerPillager",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_pillager"
+    },
+    {
+      "name": "SpawnerCreeper",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_creeper"
+    },
+    {
+      "name": "SpawnerCreeperUpdateTick",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_creeper_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerWitherSkelettUpdateTick",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_wither_skelett_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerPillagerUpdateTick",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_pillager_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerEvokerUpdateTick",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_evoker_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnerEvoker",
+      "type": "block",
+      "sortid": 117,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_evoker"
+    },
+    {
+      "name": "Trident",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trident"
+    },
+    {
+      "name": "SpawnerWitherSkelett",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_wither_skelett"
     }
   ],
   "variable_elements": [],
@@ -1641,7 +1802,8 @@
       "gamerule.spawnersActive": "Spawners active",
       "block.easysurvival.tree_crop": "Tree Crop",
       "item.easysurvival.quarz_sword": "Quarz Sword",
-      "itemGroup.tabeasy_survival": "Easy Survival",
+      "block.easysurvival.spawner_creeper": "Spawner Creeper",
+      "block.easysurvival.spawner_pillager": "Spawner Pillager",
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
