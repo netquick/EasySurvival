@@ -1,0 +1,26 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:emerald"
+    },
+    "1": {
+      "item": "minecraft:crossbow"
+    },
+    "2": {
+      "item": "minecraft:emerald"
+    },
+    "4": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "easysurvival:spawner_pillager",
+    "count": 1
+  }
+}

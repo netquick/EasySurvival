@@ -1,0 +1,13 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 1
+  }
+}
