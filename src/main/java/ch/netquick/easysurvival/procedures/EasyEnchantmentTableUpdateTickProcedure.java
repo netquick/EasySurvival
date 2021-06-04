@@ -458,7 +458,7 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
-								final int _sltid = (int) (5);
+								final int _sltid = (int) (6);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -486,7 +486,7 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
-								final int _sltid = (int) (6);
+								final int _sltid = (int) (7);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -514,7 +514,7 @@ public class EasyEnchantmentTableUpdateTickProcedure extends EasysurvivalModElem
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
-								final int _sltid = (int) (7);
+								final int _sltid = (int) (8);
 								final ItemStack _setstack = (tool);
 								_setstack.setCount((int) 1);
 								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
