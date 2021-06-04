@@ -1793,6 +1793,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_forge_auto_recipe"
+    },
+    {
+      "name": "WitherSkelettonSpawnerRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wither_skeletton_spawner_recipe"
+    },
+    {
+      "name": "SpawnerEvokerRecipe",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_evoker_recipe"
+    },
+    {
+      "name": "SpawnerCreeperRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_creeper_recipe"
+    },
+    {
+      "name": "CobbleStoneRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobble_stone_recipe"
+    },
+    {
+      "name": "SpawnerPillagerRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_pillager_recipe"
     }
   ],
   "variable_elements": [],

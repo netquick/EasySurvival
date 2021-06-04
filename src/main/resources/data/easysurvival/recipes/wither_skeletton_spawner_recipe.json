@@ -1,0 +1,42 @@
+{
+  "group": "easysurvival",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:soul_sand"
+    },
+    "1": {
+      "item": "minecraft:soul_sand"
+    },
+    "2": {
+      "item": "minecraft:soul_sand"
+    },
+    "3": {
+      "item": "minecraft:soul_sand"
+    },
+    "4": {
+      "item": "minecraft:blaze_rod"
+    },
+    "5": {
+      "item": "minecraft:soul_sand"
+    },
+    "6": {
+      "item": "minecraft:soul_sand"
+    },
+    "7": {
+      "item": "minecraft:soul_sand"
+    },
+    "8": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "easysurvival:spawner_wither_skelett",
+    "count": 1
+  }
+}
