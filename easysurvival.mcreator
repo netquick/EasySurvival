@@ -1768,15 +1768,6 @@
       "registry_name": "tag_intake"
     },
     {
-      "name": "EasyCrafterGUI",
-      "type": "gui",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_crafter_gui"
-    },
-    {
       "name": "EasySmelterRecipe",
       "type": "recipe",
       "sortid": 120,
@@ -1847,6 +1838,71 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cobble_stone_recipe"
+    },
+    {
+      "name": "EasyConverter",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_converter"
+    },
+    {
+      "name": "EasyConverterGUI",
+      "type": "gui",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_converter_gui"
+    },
+    {
+      "name": "TagLog",
+      "type": "tag",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tag_log"
+    },
+    {
+      "name": "EasyConverterUpdateTick",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_converter_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyConverterRecipe",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_converter_recipe"
     }
   ],
   "variable_elements": [],
@@ -1863,6 +1919,7 @@
       "block.easysurvival.teleporter_plate": "Teleporter Plate",
       "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
       "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
+      "block.easysurvival.easy_converter": "Easy Converter",
       "item.easysurvival.quarz_axe": "Quarz Axe",
       "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
       "item.easysurvival.basalt_sword": "Basalt Sword",

@@ -36,11 +36,11 @@ import ch.netquick.easysurvival.EasysurvivalModElements;
 import ch.netquick.easysurvival.EasysurvivalMod;
 
 @EasysurvivalModElements.ModElement.Tag
-public class EasyCrafterGUIGui extends EasysurvivalModElements.ModElement {
+public class EasyConverterGUIGui extends EasysurvivalModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public EasyCrafterGUIGui(EasysurvivalModElements instance) {
-		super(instance, 130);
+	public EasyConverterGUIGui(EasysurvivalModElements instance) {
+		super(instance, 137);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -51,12 +51,12 @@ public class EasyCrafterGUIGui extends EasysurvivalModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("easy_crafter_gui"));
+			event.getRegistry().register(containerType.setRegistryName("easy_converter_gui"));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, EasyCrafterGUIGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, EasyConverterGUIGuiWindow::new));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -75,7 +75,7 @@ public class EasyCrafterGUIGui extends EasysurvivalModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(7);
+			this.internal = new ItemStackHandler(2);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -113,35 +113,9 @@ public class EasyCrafterGUIGui extends EasysurvivalModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 57) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 48) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 48) {
-			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 57) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 57) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 115, 57) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 133, 57) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 57) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 48) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -172,18 +146,18 @@ public class EasyCrafterGUIGui extends EasysurvivalModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 7) {
-					if (!this.mergeItemStack(itemstack1, 7, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 7, false)) {
-					if (index < 7 + 27) {
-						if (!this.mergeItemStack(itemstack1, 7 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 7, 7 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

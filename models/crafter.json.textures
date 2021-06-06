@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Energy": "energy",
+        "Box": "box",
+        "Bowl": "bowl"
+      },
+      "name": "default"
+    }
+  }
+}

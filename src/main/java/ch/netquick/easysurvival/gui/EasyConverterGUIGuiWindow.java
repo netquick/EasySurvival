@@ -16,11 +16,11 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class EasyCrafterGUIGuiWindow extends ContainerScreen<EasyCrafterGUIGui.GuiContainerMod> {
+public class EasyConverterGUIGuiWindow extends ContainerScreen<EasyConverterGUIGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	public EasyCrafterGUIGuiWindow(EasyCrafterGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	public EasyConverterGUIGuiWindow(EasyConverterGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -30,7 +30,7 @@ public class EasyCrafterGUIGuiWindow extends ContainerScreen<EasyCrafterGUIGui.G
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("easysurvival:textures/easy_crafter_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("easysurvival:textures/easy_converter_gui.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -66,7 +66,7 @@ public class EasyCrafterGUIGuiWindow extends ContainerScreen<EasyCrafterGUIGui.G
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "EasyCrafter", 6, 11, -12829636);
+		this.font.drawString(ms, "EasyConverter", 6, 11, -12829636);
 	}
 
 	@Override
